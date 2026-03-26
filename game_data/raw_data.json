@@ -1,0 +1,16 @@
+[
+    {
+        "nid": "ClassData",
+        "dtype": "list",
+        "svalue": "",
+        "kvvalue": [],
+        "oattrs": [
+            "nid",
+            "Strengths",
+            "Weapons",
+            "Weaknesses",
+            "Skill"
+        ],
+        "lovalue": []
+    }
+]

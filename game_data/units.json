@@ -1,0 +1,539 @@
+[
+    {
+        "nid": "Lord",
+        "name": "Lee",
+        "desc": "The scion of the kingdom of Chronos.\nHas a long way to go.",
+        "variant": "",
+        "level": 1,
+        "klass": "Lord",
+        "tags": [
+            "Lord"
+        ],
+        "bases": {
+            "HP": 10,
+            "STR": 1,
+            "MAG": 1,
+            "SKL": 1,
+            "SPD": 1,
+            "LCK": 1,
+            "DEF": 1,
+            "CON": 3,
+            "MOV": 5,
+            "RES": 1
+        },
+        "growths": {
+            "HP": 65,
+            "STR": 40,
+            "MAG": 40,
+            "SKL": 40,
+            "SPD": 40,
+            "LCK": 40,
+            "DEF": 40,
+            "CON": 25,
+            "MOV": 0,
+            "RES": 40
+        },
+        "stat_cap_modifiers": {
+            "STR": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "HP": 0,
+            "MOV": 0,
+            "DEF": 0,
+            "MAG": 0,
+            "CON": 0,
+            "LCK": 0,
+            "RES": 0
+        },
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                1,
+                251
+            ],
+            "Lance": [
+                false,
+                1,
+                251
+            ],
+            "Axe": [
+                false,
+                1,
+                251
+            ],
+            "Bow": [
+                false,
+                1,
+                251
+            ],
+            "Staff": [
+                false,
+                1,
+                251
+            ],
+            "Light": [
+                false,
+                1,
+                251
+            ],
+            "Anima": [
+                false,
+                1,
+                251
+            ],
+            "Dark": [
+                false,
+                1,
+                251
+            ],
+            "Default": [
+                false,
+                0,
+                251
+            ]
+        },
+        "alternate_classes": [
+            "Lord",
+            "Dancer",
+            "Myrmidon",
+            "Mercenary",
+            "Thief",
+            "Soldier",
+            "Cavalier",
+            "Pegasus_Knight",
+            "Knight",
+            "Fighter",
+            "Pirate",
+            "Brigand",
+            "Archer",
+            "Monk",
+            "Cleric",
+            "Mage",
+            "Shaman",
+            "Troubadour",
+            "Wyvern_Rider"
+        ],
+        "portrait_nid": "LordMale",
+        "affinity": "None",
+        "fields": []
+    },
+    {
+        "nid": "Player",
+        "name": "Athol",
+        "desc": "It's you!\nA seasoned warrior and tactician.",
+        "variant": null,
+        "level": 1,
+        "klass": "Veteran",
+        "tags": [],
+        "bases": {
+            "HP": 30,
+            "STR": 10,
+            "MAG": 10,
+            "SKL": 10,
+            "SPD": 10,
+            "LCK": 10,
+            "DEF": 10,
+            "CON": 7,
+            "MOV": 6,
+            "RES": 10
+        },
+        "growths": {
+            "HP": 75,
+            "STR": 20,
+            "MAG": 20,
+            "SKL": 20,
+            "SPD": 20,
+            "LCK": 20,
+            "DEF": 20,
+            "CON": 15,
+            "MOV": 0,
+            "RES": 20
+        },
+        "stat_cap_modifiers": {
+            "STR": 0,
+            "SKL": 0,
+            "SPD": 0,
+            "HP": 0,
+            "MOV": 0,
+            "DEF": 0,
+            "MAG": 0,
+            "CON": 0,
+            "LCK": 0,
+            "RES": 0
+        },
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                71,
+                251
+            ],
+            "Lance": [
+                true,
+                71,
+                251
+            ],
+            "Axe": [
+                false,
+                71,
+                251
+            ],
+            "Bow": [
+                false,
+                71,
+                251
+            ],
+            "Staff": [
+                false,
+                71,
+                251
+            ],
+            "Light": [
+                false,
+                71,
+                251
+            ],
+            "Anima": [
+                false,
+                71,
+                251
+            ],
+            "Dark": [
+                false,
+                71,
+                251
+            ],
+            "Default": [
+                false,
+                0,
+                251
+            ]
+        },
+        "alternate_classes": [
+            "Dancer",
+            "Swordmaster",
+            "Hero",
+            "Assassin",
+            "Rogue",
+            "Paladin",
+            "Great_Knight",
+            "Falcoknight",
+            "General",
+            "Warrior",
+            "Berserker",
+            "Sniper",
+            "Ranger",
+            "Bishop",
+            "Sage",
+            "Druid",
+            "Summoner",
+            "Mage_Knight",
+            "Valkyrie",
+            "Wyvern_Lord",
+            "Wyvern_Knight"
+        ],
+        "portrait_nid": "JagenMale",
+        "affinity": "None",
+        "fields": []
+    },
+    {
+        "nid": "BrigandBoss",
+        "name": "Dhaval",
+        "desc": "Leader of a local bandit gang.",
+        "variant": null,
+        "level": 1,
+        "klass": "Berserker",
+        "tags": [
+            "Boss"
+        ],
+        "bases": {
+            "HP": 34,
+            "STR": 12,
+            "MAG": 5,
+            "SKL": 11,
+            "SPD": 12,
+            "LCK": 5,
+            "DEF": 11,
+            "RES": 5,
+            "CON": 13,
+            "MOV": 6
+        },
+        "growths": {
+            "HP": 70,
+            "STR": 40,
+            "MAG": 0,
+            "SKL": 45,
+            "SPD": 35,
+            "LCK": 5,
+            "DEF": 10,
+            "RES": 13,
+            "CON": 0,
+            "MOV": 0
+        },
+        "stat_cap_modifiers": {},
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Axe": [
+                false,
+                121,
+                null
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "BrigandBoss",
+        "affinity": null,
+        "fields": []
+    },
+    {
+        "nid": "MageBoss",
+        "name": "Lam",
+        "desc": "Former member of the Mage Guild.\nA rowdy and prideful sort.",
+        "variant": null,
+        "level": 1,
+        "klass": "Sage",
+        "tags": [
+            "Boss"
+        ],
+        "bases": {
+            "HP": 30,
+            "STR": 5,
+            "MAG": 15,
+            "SKL": 11,
+            "SPD": 10,
+            "LCK": 5,
+            "DEF": 10,
+            "RES": 11,
+            "CON": 7,
+            "MOV": 6
+        },
+        "growths": {
+            "HP": 45,
+            "STR": 10,
+            "MAG": 35,
+            "SKL": 20,
+            "SPD": 15,
+            "LCK": 15,
+            "DEF": 20,
+            "RES": 40,
+            "CON": 0,
+            "MOV": 0
+        },
+        "stat_cap_modifiers": {},
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Anima": [
+                false,
+                121,
+                null
+            ],
+            "Light": [
+                false,
+                71,
+                null
+            ],
+            "Staff": [
+                false,
+                31,
+                null
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "MageBoss",
+        "affinity": null,
+        "fields": []
+    },
+    {
+        "nid": "HorseBoss",
+        "name": "Blake",
+        "desc": "Captain of the Centhippon's militia.",
+        "variant": null,
+        "level": 1,
+        "klass": "Paladin",
+        "tags": [
+            "Boss"
+        ],
+        "bases": {
+            "HP": 33,
+            "STR": 12,
+            "MAG": 8,
+            "SKL": 11,
+            "SPD": 16,
+            "LCK": 5,
+            "DEF": 13,
+            "RES": 11,
+            "CON": 11,
+            "MOV": 8
+        },
+        "growths": {
+            "HP": 70,
+            "STR": 25,
+            "MAG": 22,
+            "SKL": 25,
+            "SPD": 15,
+            "LCK": 25,
+            "DEF": 2,
+            "RES": 35,
+            "CON": 0,
+            "MOV": 0
+        },
+        "stat_cap_modifiers": {},
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Lance": [
+                false,
+                121,
+                null
+            ],
+            "Sword": [
+                false,
+                121,
+                null
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "HorseBoss",
+        "affinity": null,
+        "fields": []
+    },
+    {
+        "nid": "FlyingBoss",
+        "name": "Altan",
+        "desc": "General of the neighboring kingdom's army.",
+        "variant": null,
+        "level": 1,
+        "klass": "Wyvern_Lord",
+        "tags": [
+            "Boss"
+        ],
+        "bases": {
+            "HP": 30,
+            "STR": 14,
+            "MAG": 5,
+            "SKL": 12,
+            "SPD": 12,
+            "LCK": 5,
+            "DEF": 15,
+            "RES": 7,
+            "CON": 11,
+            "MOV": 8
+        },
+        "growths": {
+            "HP": 70,
+            "STR": 30,
+            "MAG": 20,
+            "SKL": 30,
+            "SPD": 20,
+            "LCK": 20,
+            "DEF": 10,
+            "RES": 27,
+            "CON": 0,
+            "MOV": 0
+        },
+        "stat_cap_modifiers": {},
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Lance": [
+                false,
+                121,
+                null
+            ],
+            "Sword": [
+                false,
+                71,
+                null
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "FlyingBoss",
+        "affinity": null,
+        "fields": []
+    },
+    {
+        "nid": "MercenaryBoss",
+        "name": "Russell",
+        "desc": "Leader of a the Pedarion mercenaries.",
+        "variant": null,
+        "level": 1,
+        "klass": "Hero",
+        "tags": [
+            "Boss"
+        ],
+        "bases": {
+            "HP": 32,
+            "STR": 11,
+            "MAG": 6,
+            "SKL": 15,
+            "SPD": 16,
+            "LCK": 5,
+            "DEF": 13,
+            "RES": 8,
+            "CON": 11,
+            "MOV": 6
+        },
+        "growths": {
+            "HP": 75,
+            "STR": 20,
+            "MAG": 15,
+            "SKL": 20,
+            "SPD": 20,
+            "LCK": 25,
+            "DEF": 10,
+            "RES": 30,
+            "CON": 0,
+            "MOV": 0
+        },
+        "stat_cap_modifiers": {},
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {
+            "Sword": [
+                false,
+                121,
+                null
+            ],
+            "Axe": [
+                false,
+                71,
+                null
+            ]
+        },
+        "alternate_classes": [],
+        "portrait_nid": "MercenaryBoss",
+        "affinity": null,
+        "fields": []
+    },
+    {
+        "nid": "Throw_away",
+        "name": "Throw away",
+        "desc": "",
+        "variant": null,
+        "level": 1,
+        "klass": "Wall25",
+        "tags": [],
+        "bases": {},
+        "growths": {},
+        "stat_cap_modifiers": {},
+        "starting_items": [],
+        "learned_skills": [],
+        "unit_notes": [],
+        "wexp_gain": {},
+        "alternate_classes": [],
+        "portrait_nid": "Man1",
+        "affinity": null,
+        "fields": []
+    }
+]
