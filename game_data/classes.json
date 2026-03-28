@@ -135,7 +135,9 @@
         "tier": 1,
         "movement_group": "Light Foot",
         "promotes_from": null,
-        "turns_into": [],
+        "turns_into": [
+            "Dancer"
+        ],
         "tags": [
             "ArenaIgnore"
         ],
@@ -2217,7 +2219,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "PegasusKnight",
+        "map_sprite_nid": "Pegasus_KnightFemale",
         "combat_anim_nid": "Pegasus_Knight",
         "fields": [
             [
@@ -2360,7 +2362,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "Falcoknight",
+        "map_sprite_nid": "FalcoknightFemale",
         "combat_anim_nid": "Falcoknight",
         "fields": [
             [
@@ -4999,7 +5001,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "MageKnight",
+        "map_sprite_nid": "Mage_Knight",
         "combat_anim_nid": "Mage_Knight",
         "fields": [
             [
@@ -5145,7 +5147,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "Troubadour",
+        "map_sprite_nid": "TroubadourFemale",
         "combat_anim_nid": "Troubadour",
         "fields": [
             [
@@ -5288,7 +5290,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "Valkyrie",
+        "map_sprite_nid": "ValkyrieFemale",
         "combat_anim_nid": "Valkyrie",
         "fields": [
             [
@@ -5435,7 +5437,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "WyvernRider",
+        "map_sprite_nid": "Wyvern_Rider",
         "combat_anim_nid": "Wyvern_Rider",
         "fields": [
             [
@@ -5579,7 +5581,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "WyvernLord",
+        "map_sprite_nid": "Wyvern_Lord",
         "combat_anim_nid": "Wyvern_Lord",
         "fields": [
             [
@@ -5718,12 +5720,12 @@
                 251
             ]
         },
-        "icon_nid": "Wyvern Knight (U) Lance {IS}",
+        "icon_nid": "Generic_Portrait_Wyvern_Knight",
         "icon_index": [
             0,
             0
         ],
-        "map_sprite_nid": "WyvernKnight",
+        "map_sprite_nid": "Wyvern_Knight",
         "combat_anim_nid": "Wyvern_Knight",
         "fields": [
             [

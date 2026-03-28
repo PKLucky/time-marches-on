@@ -337,12 +337,12 @@
             ],
             "Light": [
                 false,
-                71,
+                121,
                 null
             ],
             "Staff": [
                 false,
-                31,
+                121,
                 null
             ]
         },
@@ -452,7 +452,7 @@
             ],
             "Sword": [
                 false,
-                71,
+                121,
                 null
             ]
         },
@@ -507,32 +507,12 @@
             ],
             "Axe": [
                 false,
-                71,
+                121,
                 null
             ]
         },
         "alternate_classes": [],
         "portrait_nid": "MercenaryBoss",
-        "affinity": null,
-        "fields": []
-    },
-    {
-        "nid": "Throw_away",
-        "name": "Throw away",
-        "desc": "",
-        "variant": null,
-        "level": 1,
-        "klass": "Wall25",
-        "tags": [],
-        "bases": {},
-        "growths": {},
-        "stat_cap_modifiers": {},
-        "starting_items": [],
-        "learned_skills": [],
-        "unit_notes": [],
-        "wexp_gain": {},
-        "alternate_classes": [],
-        "portrait_nid": "Man1",
         "affinity": null,
         "fields": []
     }

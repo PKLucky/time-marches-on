@@ -4,10 +4,6 @@
         1
     ],
     [
-        "default_background",
-        1
-    ],
-    [
         "info_menu_background",
         1
     ],
@@ -100,7 +96,7 @@
         1
     ],
     [
-        "combat_castle3",
+        "default_background",
         1
     ],
     [
@@ -165,6 +161,10 @@
     ],
     [
         "combat_desert",
+        1
+    ],
+    [
+        "CastleBright",
         1
     ]
 ]

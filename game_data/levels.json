@@ -10,7 +10,7 @@
             "enemy_phase": "Overworld 2",
             "other_phase": null,
             "enemy2_phase": null,
-            "player_battle": "Arena Battle",
+            "player_battle": "Prairie 4",
             "enemy_battle": null,
             "other_battle": null,
             "enemy2_battle": null,
@@ -820,8 +820,7 @@
                     "105",
                     "106",
                     "107",
-                    "108",
-                    "snag"
+                    "108"
                 ],
                 "positions": {
                     "101": [
@@ -872,7 +871,7 @@
         "bg_tilemap": null,
         "party": "Main",
         "music": {
-            "player_phase": "Shadow of the Enemy",
+            "player_phase": null,
             "enemy_phase": null,
             "other_phase": null,
             "enemy2_phase": null,
@@ -945,7 +944,7 @@
             {
                 "nid": "101",
                 "variant": null,
-                "level": 1,
+                "level": 10,
                 "klass": "Veteran",
                 "faction": "Soldier",
                 "starting_items": [
@@ -955,8 +954,7 @@
                     ]
                 ],
                 "starting_skills": [
-                    "Rally_Spectrum",
-                    "Rally_Strength"
+                    "Summon"
                 ],
                 "team": "player",
                 "ai": "None",
@@ -966,6 +964,22 @@
                     4,
                     8
                 ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "Phantom",
+                "variant": null,
+                "level": 1,
+                "klass": "Phantom",
+                "faction": "Soldier",
+                "starting_items": [],
+                "starting_skills": [],
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
             }

@@ -1,10 +1,17 @@
 [
     {
+        "nid": "LightSword",
+        "name": "LightSword",
+        "title": "Light Swordfighters",
+        "category": "Class",
+        "text": "Includes Myrmidons, Swordmasters, Thieves, Rogues, and Assassins."
+    },
+    {
         "nid": "ActivityPoints",
         "name": "Activity Points",
         "title": "Activity Points",
         "category": "Mechanics",
-        "text": "Certain actions done during the Preparation Phase cost <red>Activity Points</> to perform.{br}The maximum number of Activity Points available per month is based on {v:LordName}'s <red>CON</>."
+        "text": "Certain actions done during the Preparation Phase cost <red>Activity Points</> to perform.{br}The maximum number of Activity Points available per month is based on {v:LordName}'s <red>CON</>.\nThe amount of Activity Points you have can be checked at the castle when you select <red>Check Current Standings</>."
     },
     {
         "nid": "CriticalHits",
@@ -14,32 +21,18 @@
         "text": "Units do not automatically perform critical hits in battle. They must learn a skill that grants guaranteed critical hits like <red>Critical</> or <red>Wrath</>."
     },
     {
-        "nid": "Doubling",
-        "name": "Follow-Up",
-        "title": "Follow-Up Attacks",
+        "nid": "Stats",
+        "name": "Current Stats",
+        "title": "Current Stats",
         "category": "Mechanics",
-        "text": "Units do not automatically perform follow-up attacks in battle. They must learn the <red>Pursuit</> skill from a <red>Skill Scroll</> or equip a weapon that grants the <red>Pursuit</> skill to do so."
+        "text": "You can check {v:LordName}'s and {v:JagenName}'s current stats at any time by pressing the <red>INFO</> key."
     },
     {
-        "nid": "LightSword",
-        "name": "LightSword",
-        "title": "Light Swordfighters",
-        "category": "Class",
-        "text": "Includes Myrmidons, Swordmasters, Thieves, Rogues, and Assassins."
-    },
-    {
-        "nid": "Vendor",
-        "name": "Vendor",
-        "title": "Vendor",
-        "category": "Shops",
-        "text": "The vendor sells items that can change <red>base stats</> and <red>growth rates</>. They sell five items per month and restock with different items every month.\nItems are used immediately by the person who bought them."
-    },
-    {
-        "nid": "Armory",
-        "name": "Armory",
-        "title": "Armory",
-        "category": "Shops",
-        "text": "The armory sells <red>Skill Scrolls</> that teach different skills to a unit. They sell five scrolls per month and restock with different scrolls every month.\nSkill Scrolls are used immediately by the person who bought them."
+        "nid": "Reclass",
+        "name": "Reclassing",
+        "title": "Re-Classy Siblings",
+        "category": "Mechanics",
+        "text": "Six of the Re-Classy Siblings appear on the map every month. Three of them can change {v:LordName}'s class and the other three can change {v:JagenName}'s class.\nAny class chosen will be part of that unit's re-classing options at the end of the year."
     },
     {
         "nid": "Skills",
@@ -49,25 +42,32 @@
         "text": "A unit can learn as many skills as they want during the Preparation Phase, but they may only equip <red>five</> skills at a time. Skills can be swapped out at any time by selecting <red>Set Skills</> at the castle."
     },
     {
-        "nid": "Fishing",
-        "name": "Fishing",
-        "title": "Fishing",
-        "category": "Activities",
-        "text": "Fishing at the Fishing Hole yields money from the fish you caught. You also have a chance of randomly catching something that is usually stocked in the Armory or Vendor.\nItems like this will be used right away when caught. This activity costs 1 AP."
+        "nid": "Watchtower",
+        "name": "Watchtower",
+        "title": "Watchtower",
+        "category": "Mechanics",
+        "text": "The soldiers at the watchtower give helpful information about the land of Chronos and its surrounding areas. They'll have new info to talk about each month."
     },
     {
-        "nid": "Barracks",
-        "name": "Barracks",
-        "title": "Barracks",
-        "category": "Activities",
-        "text": "Both {v:LordName} and {v:JagenName} can raise their weapon experience and gain EXP at the barracks. {v:LordName} can gain 1, 2 or 4 WEXP at a time. {v:JagenName} can gain 3, 6, or 12 WEXP. Both gain 20 EXP each.\nWEXP gain is doubled if they are of a different class than their base class and are using a weapon their current class can wield. This activity costs 1 AP."
-    },
-    {
-        "nid": "Anna",
+        "nid": "AnnaShop",
         "name": "Anna",
         "title": "Anna",
         "category": "Shops",
         "text": "Anna stops by at the end of every season to sell her wares. She sells things that the other shops don't. Items are used immediately by the person who bought them."
+    },
+    {
+        "nid": "Armory",
+        "name": "Armory",
+        "title": "Armory",
+        "category": "Shops",
+        "text": "The armory sells <red>Skill Scrolls</> that teach different skills to a unit. They sell five scrolls per month and restock with different scrolls every month.\nSkill Scrolls are used immediately by the person who bought them."
+    },
+    {
+        "nid": "Vendor",
+        "name": "Vendor",
+        "title": "Vendor",
+        "category": "Shops",
+        "text": "The vendor sells items that can change <red>base stats</>, <red>growth rates</>, and <red>affinity</>. They sell five items per month and restock with different items every month.\nItems are used immediately by the person who bought them."
     },
     {
         "nid": "Arena",
@@ -77,18 +77,18 @@
         "text": "{v:LordName} and {v:JagenName} can fight in the arena to earn <red>EXP, Weapon EXP, and gold</>. Units <red>do not die</> when defeated. Payout is dependent on the level difference between both fighters.\nThis activity costs 2 AP. AP is spent <red>only when a fight begins</>."
     },
     {
-        "nid": "Watchtower",
-        "name": "Watchtower",
-        "title": "Watchtower",
-        "category": "Mechanics",
-        "text": "The soldiers at the watchtower give helpful information about the land of Chronos and its surrounding areas. They'll have new info to talk about each month."
+        "nid": "Barracks",
+        "name": "Barracks",
+        "title": "Barracks",
+        "category": "Activities",
+        "text": "Both {v:LordName} and {v:JagenName} can raise their weapon experience and gain EXP at the barracks. {v:LordName} can gain 1, 2 or 4 WEXP at a time. {v:JagenName} can gain 3, 6, or 12 WEXP. Both gain 20 EXP each.\nWEXP gain is doubled if they are of a different class than their base class and are using a weapon their current class can wield. This activity costs 1 AP."
     },
     {
-        "nid": "Reclass",
-        "name": "Reclassing",
-        "title": "Re-Classy Siblings",
-        "category": "Mechanics",
-        "text": "Six of the Re-Classy Siblings appear on the map every month. Three of them can change {v:LordName}'s class and the other three can change {v:JagenName}'s class.\nAny class chosen will be part of that unit's re-classing options at the end of the year."
+        "nid": "Fishing",
+        "name": "Fishing",
+        "title": "Fishing",
+        "category": "Activities",
+        "text": "Fishing at the Fishing Hole yields money from the fish you caught. You also have a chance of randomly catching something that is usually stocked in the Armory or Vendor.\nItems like this will be used right away when caught. This activity costs 1 AP."
     },
     {
         "nid": "Mining",

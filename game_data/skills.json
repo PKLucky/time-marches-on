@@ -917,66 +917,6 @@
         ]
     },
     {
-        "nid": "Locktouch",
-        "name": "Locktouch",
-        "desc": "Unit can opened locks without a key.",
-        "icon_nid": "Skills",
-        "icon_index": [
-            1,
-            0
-        ],
-        "components": [
-            [
-                "class_skill",
-                null
-            ],
-            [
-                "locktouch",
-                null
-            ]
-        ]
-    },
-    {
-        "nid": "Crit_Plus30",
-        "name": "Crit +30",
-        "desc": "Grants +30 Critical change",
-        "icon_nid": "Skills",
-        "icon_index": [
-            2,
-            3
-        ],
-        "components": [
-            [
-                "class_skill",
-                null
-            ],
-            [
-                "crit",
-                30
-            ]
-        ]
-    },
-    {
-        "nid": "Crit_Plus15",
-        "name": "Crit +15",
-        "desc": "Grants +15 Critical change",
-        "icon_nid": "Skills",
-        "icon_index": [
-            2,
-            3
-        ],
-        "components": [
-            [
-                "class_skill",
-                null
-            ],
-            [
-                "crit",
-                15
-            ]
-        ]
-    },
-    {
         "nid": "Anticrit",
         "name": "Anticrit",
         "desc": "Grants immunity to critical hits.",
@@ -1186,30 +1126,6 @@
             [
                 "change_ai",
                 "Pursue"
-            ]
-        ]
-    },
-    {
-        "nid": "Sword_Hit_Plus10",
-        "name": "Sword Hit +10",
-        "desc": "",
-        "icon_nid": "Skills",
-        "icon_index": [
-            5,
-            6
-        ],
-        "components": [
-            [
-                "class_skill",
-                null
-            ],
-            [
-                "hit",
-                10
-            ],
-            [
-                "condition",
-                "unit.get_weapon() and item_system.weapon_type(unit, unit.get_weapon()) == 'Sword'"
             ]
         ]
     },
@@ -1572,6 +1488,10 @@
             [
                 "ability",
                 "Summon"
+            ],
+            [
+                "condition",
+                "not u('Phantom').position"
             ]
         ]
     },
@@ -1840,16 +1760,20 @@
         ],
         "components": [
             [
-                "class_skill",
-                null
-            ],
-            [
                 "stack",
                 18
             ],
             [
                 "condition",
                 "game.is_roam() == True"
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "lost_on_end_chapter",
+                null
             ]
         ]
     },
@@ -1890,13 +1814,17 @@
             [
                 "guaranteed_crit",
                 null
+            ],
+            [
+                "alternate_battle_anim",
+                "Critical"
             ]
         ]
     },
     {
         "nid": "Pursuit",
         "name": "Pursuit",
-        "desc": "If unit's attack speed > target's attack speed, unit performs a follow-up attack.",
+        "desc": "If unit's Speed > target's Speed, unit performs a follow-up attack.",
         "icon_nid": "Skills_1",
         "icon_index": [
             3,
@@ -1906,6 +1834,14 @@
             [
                 "class_skill",
                 null
+            ],
+            [
+                "attack_speed",
+                4
+            ],
+            [
+                "combat_condition",
+                "unit.get_stat('SPD') > target.get_stat('SPD')"
             ]
         ]
     },
@@ -2044,6 +1980,10 @@
             [
                 "guaranteed_crit",
                 null
+            ],
+            [
+                "alternate_battle_anim",
+                "Critical"
             ]
         ]
     },
@@ -2147,7 +2087,7 @@
             ],
             [
                 "proc_rate",
-                "CRIT_HIT"
+                "DEBUG_PROC"
             ]
         ]
     },
@@ -3644,6 +3584,10 @@
             [
                 "stack",
                 3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
             ]
         ]
     },
@@ -3689,6 +3633,10 @@
             [
                 "stack",
                 3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
             ]
         ]
     },
@@ -3734,6 +3682,10 @@
             [
                 "stack",
                 3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
             ]
         ]
     },
@@ -3779,6 +3731,10 @@
             [
                 "stack",
                 3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
             ]
         ]
     },
@@ -3824,6 +3780,10 @@
             [
                 "stack",
                 3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
             ]
         ]
     },
@@ -3869,6 +3829,10 @@
             [
                 "stack",
                 3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
             ]
         ]
     },
@@ -3914,6 +3878,10 @@
             [
                 "stack",
                 3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
             ]
         ]
     },
@@ -4054,34 +4022,6 @@
             [
                 "avoid",
                 50
-            ]
-        ]
-    },
-    {
-        "nid": "NoDouble",
-        "name": "NoDouble",
-        "desc": "Prevents unit from doubling in battle.",
-        "icon_nid": "Skills_1",
-        "icon_index": [
-            6,
-            16
-        ],
-        "components": [
-            [
-                "cannot_double",
-                null
-            ],
-            [
-                "hidden",
-                null
-            ],
-            [
-                "condition",
-                "not has_skill(unit,'Pursuit')"
-            ],
-            [
-                "global",
-                null
             ]
         ]
     },

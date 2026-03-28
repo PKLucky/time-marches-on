@@ -324,7 +324,7 @@
         ],
         "minimap": "Shop",
         "platform": "Armory",
-        "background": "combat_plains",
+        "background": "combat_village",
         "mtype": "Normal",
         "opaque": false,
         "status": "Avoid10"
@@ -339,7 +339,7 @@
         ],
         "minimap": "Shop",
         "platform": "Vendor",
-        "background": "combat_plains",
+        "background": "combat_village",
         "mtype": "Normal",
         "opaque": false,
         "status": "Avoid10"
@@ -384,7 +384,7 @@
         ],
         "minimap": "Chest",
         "platform": "Chest",
-        "background": "combat_castle3",
+        "background": "combat_castle4",
         "mtype": "Normal",
         "opaque": false,
         "status": null
