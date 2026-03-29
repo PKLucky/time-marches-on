@@ -9,7 +9,7 @@
     ],
     [
         "turnwheel",
-        true
+        false
     ],
     [
         "initiative",
@@ -61,7 +61,7 @@
     ],
     [
         "overworld",
-        true
+        false
     ],
     [
         "overworld_start",

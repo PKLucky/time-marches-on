@@ -674,6 +674,210 @@
         ]
     },
     {
+        "nid": "StrengthPlus",
+        "name": "Strength+",
+        "desc": "Grants additional STR.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            1
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        7
+                    ]
+                ]
+            ],
+            [
+                "time",
+                7
+            ],
+            [
+                "upkeep_stat_change",
+                [
+                    [
+                        "STR",
+                        -1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "MagicPlus",
+        "name": "Magic+",
+        "desc": "Grants additional MAG.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            2
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        7
+                    ]
+                ]
+            ],
+            [
+                "time",
+                7
+            ],
+            [
+                "upkeep_stat_change",
+                [
+                    [
+                        "MAG",
+                        -1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "SkillPlus",
+        "name": "Skill+",
+        "desc": "Grants additional SKL.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            3
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        7
+                    ]
+                ]
+            ],
+            [
+                "time",
+                7
+            ],
+            [
+                "upkeep_stat_change",
+                [
+                    [
+                        "SKL",
+                        -1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "SpeedPlus",
+        "name": "Speed+",
+        "desc": "Grants additional SKL.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            4
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SPD",
+                        7
+                    ]
+                ]
+            ],
+            [
+                "time",
+                7
+            ],
+            [
+                "upkeep_stat_change",
+                [
+                    [
+                        "SPD",
+                        -1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "LuckPlus",
+        "name": "Luck+",
+        "desc": "Grants additional SKL.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            5
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "LCK",
+                        7
+                    ]
+                ]
+            ],
+            [
+                "time",
+                7
+            ],
+            [
+                "upkeep_stat_change",
+                [
+                    [
+                        "LCK",
+                        -1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "DefensePlus",
+        "name": "Defense+",
+        "desc": "Grants additional DEF.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            6
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "DEF",
+                        7
+                    ]
+                ]
+            ],
+            [
+                "time",
+                7
+            ],
+            [
+                "upkeep_stat_change",
+                [
+                    [
+                        "DEF",
+                        -1
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
         "nid": "ResistPlus",
         "name": "Resist+",
         "desc": "Grants additional RES.",
@@ -1447,7 +1651,7 @@
             ],
             [
                 "item_override",
-                "Slayer"
+                "Iron_Sword"
             ]
         ]
     },
@@ -2087,7 +2291,7 @@
             ],
             [
                 "proc_rate",
-                "DEBUG_PROC"
+                "CRIT_HIT"
             ]
         ]
     },
@@ -2470,7 +2674,7 @@
     {
         "nid": "Ignis",
         "name": "Ignis",
-        "desc": "If unit uses a physical weapon, adds Mag/2 to damage dealt. If unit uses a magic weapon, adds Str/2 to damage dealt.",
+        "desc": "If unit uses a physical weapon, adds Mag to damage dealt. If unit uses a magic weapon, adds Str to damage dealt.",
         "icon_nid": "Skills_1",
         "icon_index": [
             10,
@@ -2483,7 +2687,7 @@
             ],
             [
                 "eval_damage",
-                "unit.get_stat('STR') // 2 if item_funcs.is_magic(unit, unit.get_weapon()) else unit.get_stat('MAG') // 2"
+                "unit.get_stat('STR') if item_funcs.is_magic(unit, unit.get_weapon()) else unit.get_stat('MAG')"
             ]
         ]
     },
@@ -2667,7 +2871,7 @@
     {
         "nid": "Wind_Disciple",
         "name": "Wind Disciple",
-        "desc": "If unit is injured, grants +10 Hit/Avoid.",
+        "desc": "If unit is injured, grants +3 Skill and Speed.",
         "icon_nid": "Skills_1",
         "icon_index": [
             1,
@@ -2683,12 +2887,17 @@
                 "unit.get_hp() <= unit.get_max_hp()"
             ],
             [
-                "hit",
-                10
-            ],
-            [
-                "avoid",
-                10
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        3
+                    ],
+                    [
+                        "SPD",
+                        3
+                    ]
+                ]
             ]
         ]
     },
@@ -4055,6 +4264,279 @@
             [
                 "global",
                 null
+            ]
+        ]
+    },
+    {
+        "nid": "Fury",
+        "name": "Fury",
+        "desc": "Grants +3 to all stats except for HP, Mov, and Con. Unit receives 5 damage after combat.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            7,
+            43
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "recoil",
+                5
+            ],
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        3
+                    ],
+                    [
+                        "MAG",
+                        3
+                    ],
+                    [
+                        "SKL",
+                        3
+                    ],
+                    [
+                        "SPD",
+                        3
+                    ],
+                    [
+                        "SPD",
+                        3
+                    ],
+                    [
+                        "DEF",
+                        3
+                    ],
+                    [
+                        "RES",
+                        3
+                    ]
+                ]
+            ]
+        ]
+    },
+    {
+        "nid": "Wings_Of_Mercy",
+        "name": "Wings Of Mercy",
+        "desc": "Unit can warp to a tile adjacent to an ally who is at 50% Max HP or less.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            50
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "witch_warp_expression",
+                "unit.get_hp() <= unit.get_max_hp() // 2"
+            ]
+        ]
+    },
+    {
+        "nid": "Air_Orders",
+        "name": "Air Orders",
+        "desc": "Unit can warp to a tile adjacent to a flying ally.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            10,
+            31
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "witch_warp_expression",
+                "'Flying' in unit.tags"
+            ]
+        ]
+    },
+    {
+        "nid": "Infantry_Orders",
+        "name": "Infantry Orders",
+        "desc": "Unit can warp to a tile adjacent to an infantry ally.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            0,
+            31
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "witch_warp_expression",
+                "'Mounted' not in unit.tags"
+            ]
+        ]
+    },
+    {
+        "nid": "Calvary_Orders",
+        "name": "Calvary Orders",
+        "desc": "Unit can warp to a tile adjacent to an ally on horseback.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            3,
+            31
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "witch_warp_expression",
+                "'Horse' in unit.tags"
+            ]
+        ]
+    },
+    {
+        "nid": "Wary_Fighter",
+        "name": "Wary Fighter",
+        "desc": "Unit and target cannot perform follow-up attacks.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            4,
+            32
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "skill_before_combat",
+                {
+                    "skill": "Wary_Fighter_Enemy",
+                    "recipient": "target",
+                    "allegiance": "enemy"
+                }
+            ],
+            [
+                "cannot_double",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Wary_Fighter_Enemy",
+        "name": "Wary Fighter",
+        "desc": "Unit and target cannot perform follow-up attacks.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            4,
+            32
+        ],
+        "components": [
+            [
+                "cannot_double",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "Intimidator",
+        "name": "Intimidator",
+        "desc": "Enemy deals 3 less damage if unit's Strength > enemy's Strength.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            1,
+            15
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "unit.get_stat('STR') > target.get_stat('STR')"
+            ],
+            [
+                "resist",
+                3
+            ]
+        ]
+    },
+    {
+        "nid": "Intellectual",
+        "name": "Intellectual",
+        "desc": "Enemy deals 3 less damage if unit's Magic > enemy's Magic.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            15
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "unit.get_stat('MAG') > target.get_stat('MAG')"
+            ],
+            [
+                "resist",
+                3
+            ]
+        ]
+    },
+    {
+        "nid": "Rampart",
+        "name": "Rampart",
+        "desc": "Enemy takes 3 more damage if unit's Defense > enemy's Defense.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            15
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "unit.get_stat('DEF') > target.get_stat('DEF')"
+            ],
+            [
+                "damage",
+                3
+            ]
+        ]
+    },
+    {
+        "nid": "Ethereal",
+        "name": "Ethereal",
+        "desc": "Enemy takes 3 more damage if unit's Resistance > enemy's Resistance.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            7,
+            15
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "unit.get_stat('RES') > target.get_stat('RES')"
+            ],
+            [
+                "damage",
+                3
             ]
         ]
     }

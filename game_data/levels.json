@@ -898,8 +898,8 @@
                 "roam_ai": null,
                 "ai_group": null,
                 "starting_position": [
-                    2,
-                    6
+                    14,
+                    3
                 ],
                 "starting_traveler": null,
                 "generic": false
@@ -944,8 +944,8 @@
             {
                 "nid": "101",
                 "variant": null,
-                "level": 10,
-                "klass": "Veteran",
+                "level": 20,
+                "klass": "Thief",
                 "faction": "Soldier",
                 "starting_items": [
                     [
@@ -954,7 +954,7 @@
                     ]
                 ],
                 "starting_skills": [
-                    "Summon"
+                    "Wary_Fighter"
                 ],
                 "team": "player",
                 "ai": "None",

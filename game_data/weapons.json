@@ -43,7 +43,7 @@
     {
         "nid": "Lance",
         "name": "Lance",
-        "force_melee_anim": false,
+        "force_melee_anim": true,
         "hide_from_display": false,
         "hide_from_convoy": false,
         "rank_bonus": [],
@@ -84,7 +84,7 @@
     {
         "nid": "Axe",
         "name": "Axe",
-        "force_melee_anim": false,
+        "force_melee_anim": true,
         "hide_from_display": false,
         "hide_from_convoy": false,
         "rank_bonus": [],

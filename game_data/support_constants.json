@@ -1,11 +1,11 @@
 [
     [
         "combat_convos",
-        true
+        0
     ],
     [
         "base_convos",
-        2
+        0
     ],
     [
         "battle_buddy_system",

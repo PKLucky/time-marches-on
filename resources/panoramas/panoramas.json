@@ -166,5 +166,13 @@
     [
         "CastleBright",
         1
+    ],
+    [
+        "good_end_bg",
+        1
+    ],
+    [
+        "bad_end_bg",
+        1
     ]
 ]

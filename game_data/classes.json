@@ -135,9 +135,7 @@
         "tier": 1,
         "movement_group": "Light Foot",
         "promotes_from": null,
-        "turns_into": [
-            "Dancer"
-        ],
+        "turns_into": [],
         "tags": [
             "ArenaIgnore"
         ],
@@ -2219,8 +2217,8 @@
             0,
             0
         ],
-        "map_sprite_nid": "Pegasus_KnightFemale",
-        "combat_anim_nid": "Pegasus_Knight",
+        "map_sprite_nid": "Pegasus_Knight",
+        "combat_anim_nid": "Pegasus_KnightFemale",
         "fields": [
             [
                 "ClassSkill",
@@ -2362,8 +2360,8 @@
             0,
             0
         ],
-        "map_sprite_nid": "FalcoknightFemale",
-        "combat_anim_nid": "Falcoknight",
+        "map_sprite_nid": "Falcoknight",
+        "combat_anim_nid": "FalcoknightFemale",
         "fields": [
             [
                 "ClassSkill",
@@ -5147,7 +5145,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "TroubadourFemale",
+        "map_sprite_nid": "Troubadour",
         "combat_anim_nid": "Troubadour",
         "fields": [
             [
@@ -5290,7 +5288,7 @@
             0,
             0
         ],
-        "map_sprite_nid": "ValkyrieFemale",
+        "map_sprite_nid": "Valkyrie",
         "combat_anim_nid": "Valkyrie",
         "fields": [
             [

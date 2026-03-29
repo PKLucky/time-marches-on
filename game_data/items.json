@@ -5018,276 +5018,6 @@
         ]
     },
     {
-        "nid": "Ballista",
-        "name": "Ballista",
-        "desc": "Inflicts Movement -2 when equipped.",
-        "icon_nid": "Bow",
-        "icon_index": [
-            0,
-            8
-        ],
-        "components": [
-            [
-                "target_enemy",
-                null
-            ],
-            [
-                "level_exp",
-                null
-            ],
-            [
-                "damage",
-                8
-            ],
-            [
-                "hit",
-                60
-            ],
-            [
-                "weapon_type",
-                "Bow"
-            ],
-            [
-                "uses",
-                5
-            ],
-            [
-                "uses_options",
-                {
-                    "lose_uses_on_miss": false,
-                    "one_loss_per_combat": false
-                }
-            ],
-            [
-                "weight",
-                20
-            ],
-            [
-                "crit",
-                0
-            ],
-            [
-                "wexp",
-                4
-            ],
-            [
-                "min_range",
-                3
-            ],
-            [
-                "max_range",
-                10
-            ],
-            [
-                "weapon_rank",
-                "E"
-            ],
-            [
-                "siege_weapon",
-                null
-            ],
-            [
-                "prf_class",
-                [
-                    "Archer",
-                    "Sniper"
-                ]
-            ],
-            [
-                "effective_damage",
-                {
-                    "effective_tags": [
-                        "Flying"
-                    ],
-                    "effective_multiplier": 3.0,
-                    "effective_bonus_damage": 0,
-                    "show_effectiveness_flash": true,
-                    "weapon_effectiveness_multiplied": true
-                }
-            ]
-        ]
-    },
-    {
-        "nid": "Long_Ballista",
-        "name": "Long Ballista",
-        "desc": "Inflicts Movement -2 when equipped.",
-        "icon_nid": "Bow",
-        "icon_index": [
-            0,
-            9
-        ],
-        "components": [
-            [
-                "target_enemy",
-                null
-            ],
-            [
-                "level_exp",
-                null
-            ],
-            [
-                "damage",
-                13
-            ],
-            [
-                "hit",
-                60
-            ],
-            [
-                "weapon_type",
-                "Bow"
-            ],
-            [
-                "uses",
-                5
-            ],
-            [
-                "uses_options",
-                {
-                    "lose_uses_on_miss": false,
-                    "one_loss_per_combat": false
-                }
-            ],
-            [
-                "weight",
-                20
-            ],
-            [
-                "crit",
-                0
-            ],
-            [
-                "wexp",
-                4
-            ],
-            [
-                "min_range",
-                3
-            ],
-            [
-                "max_range",
-                15
-            ],
-            [
-                "weapon_rank",
-                "C"
-            ],
-            [
-                "siege_weapon",
-                null
-            ],
-            [
-                "prf_class",
-                [
-                    "Archer",
-                    "Sniper"
-                ]
-            ],
-            [
-                "effective_damage",
-                {
-                    "effective_tags": [
-                        "Flying"
-                    ],
-                    "effective_multiplier": 3.0,
-                    "effective_bonus_damage": 0,
-                    "show_effectiveness_flash": true,
-                    "weapon_effectiveness_multiplied": true
-                }
-            ]
-        ]
-    },
-    {
-        "nid": "Killer_Ballista",
-        "name": "Killer Ballis",
-        "desc": "Inflicts Movement -2 when equipped.",
-        "icon_nid": "Bow",
-        "icon_index": [
-            0,
-            10
-        ],
-        "components": [
-            [
-                "target_enemy",
-                null
-            ],
-            [
-                "level_exp",
-                null
-            ],
-            [
-                "damage",
-                12
-            ],
-            [
-                "hit",
-                65
-            ],
-            [
-                "weapon_type",
-                "Bow"
-            ],
-            [
-                "uses",
-                5
-            ],
-            [
-                "uses_options",
-                {
-                    "lose_uses_on_miss": false,
-                    "one_loss_per_combat": false
-                }
-            ],
-            [
-                "weight",
-                20
-            ],
-            [
-                "crit",
-                10
-            ],
-            [
-                "wexp",
-                4
-            ],
-            [
-                "min_range",
-                3
-            ],
-            [
-                "max_range",
-                10
-            ],
-            [
-                "weapon_rank",
-                "A"
-            ],
-            [
-                "siege_weapon",
-                null
-            ],
-            [
-                "prf_class",
-                [
-                    "Archer",
-                    "Sniper"
-                ]
-            ],
-            [
-                "effective_damage",
-                {
-                    "effective_tags": [
-                        "Flying"
-                    ],
-                    "effective_multiplier": 3.0,
-                    "effective_bonus_damage": 0,
-                    "show_effectiveness_flash": true,
-                    "weapon_effectiveness_multiplied": true
-                }
-            ]
-        ]
-    },
-    {
         "nid": "Heal",
         "name": "Heal",
         "desc": "Restores (User's MAG + 10) HP.",
@@ -5647,81 +5377,6 @@
             [
                 "equation_heal",
                 "HEAL"
-            ]
-        ]
-    },
-    {
-        "nid": "Trade",
-        "name": "Trade",
-        "desc": "Trade with a far away ally.",
-        "icon_nid": "Staff",
-        "icon_index": [
-            0,
-            7
-        ],
-        "components": [
-            [
-                "spell",
-                null
-            ],
-            [
-                "value",
-                600
-            ],
-            [
-                "target_ally",
-                null
-            ],
-            [
-                "min_range",
-                1
-            ],
-            [
-                "max_range",
-                10
-            ],
-            [
-                "weapon_type",
-                "Staff"
-            ],
-            [
-                "weapon_rank",
-                "E"
-            ],
-            [
-                "uses",
-                10
-            ],
-            [
-                "uses_options",
-                {
-                    "lose_uses_on_miss": false,
-                    "one_loss_per_combat": false
-                }
-            ],
-            [
-                "exp",
-                11
-            ],
-            [
-                "wexp",
-                2
-            ],
-            [
-                "map_hit_add_blend",
-                [
-                    232,
-                    200,
-                    15
-                ]
-            ],
-            [
-                "trade",
-                null
-            ],
-            [
-                "menu_after_combat",
-                null
             ]
         ]
     },
@@ -6133,9 +5788,9 @@
         ]
     },
     {
-        "nid": "Hammerne",
-        "name": "Hammerne",
-        "desc": "Repair an item to full uses.",
+        "nid": "Toughen",
+        "name": "Toughen",
+        "desc": "Raises ally's strength.",
         "icon_nid": "Staff",
         "icon_index": [
             0,
@@ -6148,7 +5803,82 @@
             ],
             [
                 "value",
-                1800
+                2250
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                15
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "exp",
+                17
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "wexp",
+                4
+            ],
+            [
+                "status_on_hit",
+                "StrengthPlus"
+            ]
+        ]
+    },
+    {
+        "nid": "Enchant",
+        "name": "Enchant",
+        "desc": "Raises ally's strength.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            1,
+            0
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "value",
+                2250
             ],
             [
                 "target_ally",
@@ -6172,7 +5902,7 @@
             ],
             [
                 "uses",
-                3
+                15
             ],
             [
                 "uses_options",
@@ -6183,38 +5913,105 @@
             ],
             [
                 "exp",
-                40
+                17
             ],
             [
                 "wexp",
-                8
+                4
             ],
             [
                 "map_hit_add_blend",
                 [
-                    234,
-                    255,
-                    0
+                    0,
+                    4,
+                    232
                 ]
-            ],
-            [
-                "repair",
-                null
             ],
             [
                 "magic",
                 null
+            ],
+            [
+                "status_on_hit",
+                "MagicPlus"
             ]
         ]
     },
     {
-        "nid": "Thief",
-        "name": "Thief",
-        "desc": "Steal items from enemies.",
+        "nid": "Sharpen",
+        "name": "Sharpen",
+        "desc": "Raises ally's skill.",
         "icon_nid": "Staff",
         "icon_index": [
-            0,
-            12
+            1,
+            1
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                15
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "status_on_hit",
+                "SkillPlus"
+            ],
+            [
+                "wexp",
+                4
+            ],
+            [
+                "exp",
+                17
+            ],
+            [
+                "value",
+                2250
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ]
+        ]
+    },
+    {
+        "nid": "Hustle",
+        "name": "Hustle",
+        "desc": "Raises ally's speed.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            1,
+            2
         ],
         "components": [
             [
@@ -6223,7 +6020,11 @@
             ],
             [
                 "value",
-                1800
+                2250
+            ],
+            [
+                "target_ally",
+                null
             ],
             [
                 "min_range",
@@ -6231,7 +6032,7 @@
             ],
             [
                 "max_range",
-                10
+                1
             ],
             [
                 "weapon_type",
@@ -6243,7 +6044,7 @@
             ],
             [
                 "uses",
-                5
+                15
             ],
             [
                 "uses_options",
@@ -6254,23 +6055,177 @@
             ],
             [
                 "exp",
-                40
+                17
+            ],
+            [
+                "wexp",
+                4
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    34,
+                    255,
+                    0
+                ]
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "status_on_hit",
+                "SpeedPlus"
+            ]
+        ]
+    },
+    {
+        "nid": "Dazzle",
+        "name": "Dazzle",
+        "desc": "Raises ally's luck.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            1,
+            3
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "value",
+                2250
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                15
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "exp",
+                17
+            ],
+            [
+                "wexp",
+                4
             ],
             [
                 "map_hit_add_blend",
                 [
                     255,
-                    238,
-                    238
+                    255,
+                    0
                 ]
             ],
             [
-                "steal",
+                "magic",
                 null
             ],
             [
-                "target_enemy",
+                "status_on_hit",
+                "Luck_Plus5Effect"
+            ]
+        ]
+    },
+    {
+        "nid": "Bolster",
+        "name": "Bolster",
+        "desc": "Raises ally's defense.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            1,
+            4
+        ],
+        "components": [
+            [
+                "spell",
                 null
+            ],
+            [
+                "value",
+                2250
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                15
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "exp",
+                17
+            ],
+            [
+                "wexp",
+                4
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    0,
+                    255,
+                    247
+                ]
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "status_on_hit",
+                "DefensePlus"
             ]
         ]
     },
@@ -10679,30 +10634,10 @@
             [
                 "map_cast_pose",
                 null
-            ]
-        ]
-    },
-    {
-        "nid": "Slayer",
-        "name": "Slayer",
-        "desc": "(Item override for the Slayer skill.)",
-        "icon_nid": "Skills",
-        "icon_index": [
-            2,
-            9
-        ],
-        "components": [
+            ],
             [
-                "effective_damage",
-                {
-                    "effective_tags": [
-                        "Monster"
-                    ],
-                    "effective_multiplier": 3,
-                    "effective_bonus_damage": 0,
-                    "show_effectiveness_flash": true,
-                    "weapon_effectiveness_multiplied": true
-                }
+                "battle_animation_music",
+                "Story"
             ]
         ]
     },
@@ -11417,12 +11352,6 @@
                 5000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Wrath"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -11466,12 +11395,6 @@
             [
                 "value",
                 5000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Vantage"
-                ]
             ],
             [
                 "unsplashable",
@@ -11519,12 +11442,6 @@
                 5000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Pursuit"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -11568,12 +11485,6 @@
             [
                 "value",
                 5000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Brave_Strike"
-                ]
             ],
             [
                 "unsplashable",
@@ -11621,12 +11532,6 @@
                 5000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Galeforce"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -11670,12 +11575,6 @@
             [
                 "value",
                 5000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Acrobat"
-                ]
             ],
             [
                 "unsplashable",
@@ -11723,12 +11622,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Pavise"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -11772,12 +11665,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Luna"
-                ]
             ],
             [
                 "unsplashable",
@@ -11825,12 +11712,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Strength_Plus5"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -11874,12 +11755,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Magic_Plus5"
-                ]
             ],
             [
                 "unsplashable",
@@ -11927,12 +11802,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Skill_Plus5"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -11976,12 +11845,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Speed_Plus5"
-                ]
             ],
             [
                 "unsplashable",
@@ -12029,12 +11892,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Luck_Plus5"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12078,12 +11935,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Defense_Plus5"
-                ]
             ],
             [
                 "unsplashable",
@@ -12131,12 +11982,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Resistance_Plus5"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12180,12 +12025,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "HP_Plus10"
-                ]
             ],
             [
                 "unsplashable",
@@ -12233,12 +12072,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Movement_Plus2"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12282,12 +12115,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Inspiration"
-                ]
             ],
             [
                 "unsplashable",
@@ -12335,12 +12162,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Shove"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12384,12 +12205,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Reposition"
-                ]
             ],
             [
                 "unsplashable",
@@ -12437,12 +12252,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Pivot"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12486,12 +12295,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Swap"
-                ]
             ],
             [
                 "unsplashable",
@@ -12539,12 +12342,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Rally_Strength"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12588,12 +12385,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Rally_Magic"
-                ]
             ],
             [
                 "unsplashable",
@@ -12641,12 +12432,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Rally_Skill"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12690,12 +12475,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Rally_Speed"
-                ]
             ],
             [
                 "unsplashable",
@@ -12743,12 +12522,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Rally_Luck"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12792,12 +12565,6 @@
             [
                 "value",
                 1000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Rally_Defense"
-                ]
             ],
             [
                 "unsplashable",
@@ -12845,12 +12612,6 @@
                 1000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Rally_Resistance"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12894,12 +12655,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Rally_Movement"
-                ]
             ],
             [
                 "unsplashable",
@@ -12947,12 +12702,6 @@
                 5000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Rally_Spectrum"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -12996,12 +12745,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Sure_Strike"
-                ]
             ],
             [
                 "unsplashable",
@@ -13049,12 +12792,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Sol"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13098,12 +12835,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Miracle"
-                ]
             ],
             [
                 "unsplashable",
@@ -13151,12 +12882,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Astra"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13200,12 +12925,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Armsthrift"
-                ]
             ],
             [
                 "unsplashable",
@@ -13253,12 +12972,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Triangle_Adept"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13302,12 +13015,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Camaraderie"
-                ]
             ],
             [
                 "unsplashable",
@@ -13355,12 +13062,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Hex"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13404,12 +13105,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Anathema"
-                ]
             ],
             [
                 "unsplashable",
@@ -13457,12 +13152,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Fortress_Guard"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13506,12 +13195,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Dragon_Fang"
-                ]
             ],
             [
                 "unsplashable",
@@ -13559,12 +13242,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Poison_Strike"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13610,12 +13287,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Savage_Blow"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13624,7 +13295,7 @@
     {
         "nid": "ScrollIgnis",
         "name": "Ignis Scroll",
-        "desc": "If unit uses a physical weapon, adds Mag/2 to damage dealt. If unit uses a magic weapon, adds Str/2 to damage dealt. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "desc": "If unit uses a physical weapon, adds Mag to damage dealt. If unit uses a magic weapon, adds Str to damage dealt. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Skills_1",
         "icon_index": [
             10,
@@ -13659,12 +13330,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Ignis"
-                ]
             ],
             [
                 "unsplashable",
@@ -13712,12 +13377,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Charm"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13761,12 +13420,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Vengeance"
-                ]
             ],
             [
                 "unsplashable",
@@ -13814,12 +13467,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Healtouch"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13865,12 +13512,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Immobilize"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -13879,7 +13520,7 @@
     {
         "nid": "ScrollWind_Disciple",
         "name": "Wind Disciple Scroll",
-        "desc": "If unit is injured, grants +10 Hit/Avoid. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "desc": "If unit is injured, grants +3 Skill and Speed. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Skills_1",
         "icon_index": [
             1,
@@ -13914,12 +13555,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Wind_Disciple"
-                ]
             ],
             [
                 "unsplashable",
@@ -13967,12 +13602,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Dragon_Ward"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14016,12 +13645,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Trample"
-                ]
             ],
             [
                 "unsplashable",
@@ -14069,12 +13692,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Awakening"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14118,12 +13735,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Prescience"
-                ]
             ],
             [
                 "unsplashable",
@@ -14171,12 +13782,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Highwayman"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14220,12 +13825,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Strong_Riposte"
-                ]
             ],
             [
                 "unsplashable",
@@ -14273,12 +13872,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Quick_Draw"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14322,12 +13915,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Life_And_Death"
-                ]
             ],
             [
                 "unsplashable",
@@ -14375,12 +13962,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Air_Superiority"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14424,12 +14005,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Peaceful_Aura"
-                ]
             ],
             [
                 "unsplashable",
@@ -14477,12 +14052,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Opportunist"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14526,12 +14095,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Renewal"
-                ]
             ],
             [
                 "unsplashable",
@@ -14579,12 +14142,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Patience"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14628,12 +14185,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Live_To_Serve"
-                ]
             ],
             [
                 "unsplashable",
@@ -14681,12 +14232,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Strengthtaker"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14730,12 +14275,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Magictaker"
-                ]
             ],
             [
                 "unsplashable",
@@ -14783,12 +14322,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Skilltaker"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14832,12 +14365,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Speedtaker"
-                ]
             ],
             [
                 "unsplashable",
@@ -14885,12 +14412,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Lucktaker"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -14934,12 +14455,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Defensetaker"
-                ]
             ],
             [
                 "unsplashable",
@@ -14987,12 +14502,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Resistancetaker"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -15036,12 +14545,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Swordbreaker"
-                ]
             ],
             [
                 "unsplashable",
@@ -15089,12 +14592,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Lancebreaker"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -15138,12 +14635,6 @@
             [
                 "value",
                 3000
-            ],
-            [
-                "multi_desc_skill",
-                [
-                    "Axebreaker"
-                ]
             ],
             [
                 "unsplashable",
@@ -15191,12 +14682,6 @@
                 3000
             ],
             [
-                "multi_desc_skill",
-                [
-                    "Bowbreaker"
-                ]
-            ],
-            [
                 "unsplashable",
                 null
             ]
@@ -15242,10 +14727,454 @@
                 3000
             ],
             [
-                "multi_desc_skill",
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollFury",
+        "name": "Fury Scroll",
+        "desc": "Grants +3 to all stats except for HP, Mov, and Con. Unit receives 5 damage after combat. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            7,
+            43
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
                 [
-                    "Tomebreaker"
+                    "SkillScroll"
                 ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollWings_Of_Mercy",
+        "name": "Wings Of Mercy Scroll",
+        "desc": "Unit can warp to a tile adjacent to an ally who is at 50% Max HP or less. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            50
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollAir_Orders",
+        "name": "Air Orders Scroll",
+        "desc": "Unit can warp to a tile adjacent to a flying ally. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            10,
+            31
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollInfantry_Orders",
+        "name": "Infantry Orders Scroll",
+        "desc": "Unit can warp to a tile adjacent to an infantry ally. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            0,
+            31
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollCalvary_Orders",
+        "name": "Calvary Orders Scroll",
+        "desc": "Unit can warp to a tile adjacent to an ally on horseback. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            3,
+            31
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollWary_Fighter",
+        "name": "Wary Fighter Scroll",
+        "desc": "Unit and target cannot perform follow-up attacks. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            4,
+            32
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollIntimidator",
+        "name": "Intimidator Scroll",
+        "desc": "Enemy deals 3 less damage if unit's Strength > enemy's Strength. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            1,
+            15
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollIntellectual",
+        "name": "Intellectual Scroll",
+        "desc": "Enemy deals 3 less damage if unit's Magic > enemy's Magic. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            15
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollRampart",
+        "name": "Rampart Scroll",
+        "desc": "Enemy takes 3 more damage if unit's Defense > enemy's Defense. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            15
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "ScrollEthereal",
+        "name": "Ethereal Scroll",
+        "desc": "Enemy takes 3 more damage if unit's Resistance > enemy's Resistance. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            7,
+            15
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
             ],
             [
                 "unsplashable",
@@ -15503,7 +15432,7 @@
     {
         "nid": "Cursed_Dice",
         "name": "Cursed Dice",
-        "desc": "Permanently raises Luck by 4 points and decreases Magic and Skill by 2 points.{e:' <red>(4500G)</>' if game.is_roam() == True else ''}",
+        "desc": "Permanently raises Luck by 4 points and decreases Magic and Skill by 2 points. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Boosters",
         "icon_index": [
             0,
@@ -16061,7 +15990,7 @@
     {
         "nid": "False_Idol",
         "name": "False Idol",
-        "desc": "Permanently raises Magic by 4 points and decreases Luck and Resistance by 2 points.{e:' <red>(4500G)</>' if game.is_roam() == True else ''}",
+        "desc": "Permanently raises Magic by 4 points and decreases Luck and Resistance by 2 points. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Boosters",
         "icon_index": [
             0,
@@ -17002,7 +16931,7 @@
     {
         "nid": "Rage_Gauntlets",
         "name": "Rage Gauntlets",
-        "desc": "Permanently raises Strength by 4 points and decreases Defense and Resistance by 2 points.{e:' <red>(4500G)</>' if game.is_roam() == True else ''}",
+        "desc": "Permanently raises Strength by 4 points and decreases Defense and Resistance by 2 points. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Boosters",
         "icon_index": [
             0,
@@ -17070,7 +16999,7 @@
     {
         "nid": "Sake",
         "name": "Sake",
-        "desc": "Permanently raises Resistance by 4 points and decreases Skill and Speed by 2 points.{e:' <red>(4500G)</>' if game.is_roam() == True else ''}",
+        "desc": "Permanently raises Resistance by 4 points and decreases Skill and Speed by 2 points. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "New",
         "icon_index": [
             2,
@@ -17867,7 +17796,7 @@
     {
         "nid": "Strange_Scroll",
         "name": "Strange Scroll",
-        "desc": "Permanently raises Skill by 4 points and decreases Strength and Luck by 2 points.{e:' <red>(4500G)</>' if game.is_roam() == True else ''}",
+        "desc": "Permanently raises Skill by 4 points and decreases Strength and Luck by 2 points. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Boosters",
         "icon_index": [
             0,
@@ -18010,7 +17939,7 @@
     {
         "nid": "Tower_Shield",
         "name": "Tower Shield",
-        "desc": "Permanently raises Defense by 4 points and decreases Magic and Speed by 2 points.{e:' <red>(4500G)</>' if game.is_roam() == True else ''}",
+        "desc": "Permanently raises Defense by 4 points and decreases Magic and Speed by 2 points. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Boosters",
         "icon_index": [
             0,
@@ -18078,7 +18007,7 @@
     {
         "nid": "Zephyr_Boots",
         "name": "Zephyr Boots",
-        "desc": "Permanently raises Speed by 4 points and decreases Strength and Defense by 2 points.{e:' <red>(4500G)</>' if game.is_roam() == True else ''}",
+        "desc": "Permanently raises Speed by 4 points and decreases Strength and Defense by 2 points. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Boosters",
         "icon_index": [
             0,
