@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Immobilize",
+        "name": "Immobilize",
+        "desc": "Proc: Skl/2%\nReduces target's Movement to 0 and inflicts -20 Avoid on the target for one turn.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            0,
+            38
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "attack_proc",
+                "Immobilize_Proc"
+            ],
+            [
+                "proc_rate",
+                "CRIT_HIT"
+            ]
+        ]
+    }
+]

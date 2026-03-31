@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Armory Choose Stock",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "lvar;ArmoryGetItem;game.get_random_choice(['ScrollWrath','ScrollPursuit','ScrollPavise','ScrollLuna','ScrollStrength_Plus5','ScrollPavise','ScrollShove','ScrollMagic_Plus5','ScrollSkill_Plus5','ScrollSpeed_Plus5','ScrollLuck_Plus5','ScrollDefense_Plus5','ScrollResistance_Plus5','ScrollHP_Plus10','ScrollMovement_Plus2','ScrollSure_Strike','ScrollSol','ScrollReposition','ScrollPivot','ScrollMiracle','ScrollAstra','ScrollVantage','ScrollArmsthrift','ScrollGaleforce','ScrollAcrobat','ScrollTriangle_Adept','ScrollCamaraderie','ScrollHex','ScrollAnathema','ScrollFortress_Guard','ScrollDragon_Fang','ScrollPoison_Strike','ScrollSavage_Blow','ScrollIgnis','ScrollCharm','ScrollVengeance','ScrollHealtouch','ScrollImmobilize','ScrollWind_Disciple','ScrollDragon_Ward','ScrollTrample','ScrollAwakening','ScrollPrescience','ScrollHighwayman','ScrollStrong_Riposte','ScrollQuick_Draw','ScrollLife_And_Death','ScrollAir_Superiority','ScrollPeaceful_Aura','ScrollOpportunist','ScrollRenewal','ScrollPatience','ScrollRally_Strength','ScrollRally_Magic','ScrollRally_Skill','ScrollRally_Speed','ScrollRally_Luck','ScrollRally_Defense','ScrollRally_Resistance','ScrollRally_Movement','ScrollRally_Spectrum','ScrollSwap','ScrollLive_To_Serve','ScrollStrengthtaker','ScrollMagictaker','ScrollSkilltaker','ScrollSpeedtaker','ScrollLucktaker','ScrollDefensetaker','ScrollResistancetaker','ScrollSwordbreaker','ScrollLancebreaker','ScrollAxebreaker','ScrollBowbreaker','ScrollTomebreaker','ScrollBrave_Strike','ScrollFury','ScrollWings_Of_Mercy','ScrollAir_Orders','ScrollInfantry_Orders','ScrollCalvary_Orders','ScrollWary_Fighter','ScrollIntimidator','ScrollIntellectual','ScrollRampart','ScrollEthereal','ScrollGamble','ScrollCritical','ScrollFocus','ScrollSolidarity','ScrollRivalry','ScrollFull_Guard'])",
+            "if;v('ArmoryGetItem') in v('ArmoryStock')",
+            "  trigger_script;0 Armory Choose Stock",
+            "else",
+            "  mlvar;ArmoryStock;it.append('{v:ArmoryGetItem}')",
+            "end"
+        ],
+        "nid": "0 Armory Choose Stock"
+    }
+]

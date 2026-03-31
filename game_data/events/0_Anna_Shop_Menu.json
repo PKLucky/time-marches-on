@@ -1,0 +1,35 @@
+[
+    {
+        "name": "Anna Shop Menu",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "table;GoldDisplay;game.get_money();;;60;top_left;funds_display;;center;expression",
+            "choice;ShopChoice;What will {v:ShopperName} buy?;{v:AnnaStock};EntryType=type_base_item;expression;backable",
+            "if;v('ShopChoice') != 'BACK'",
+            "  if;DB.items.get('{v:ShopChoice}').value.value // 2 <= game.get_money() and has_skill('Lord','Bargain')",
+            "    move;Player;Lord;immediate;closest",
+            "    give_money;{e:-1 * DB.items.get('{v:ShopChoice}').value.value // 2}",
+            "    give_item;{v:Shopper};{v:ShopChoice};force_give",
+            "    interact;{v:Shopper};{v:Shopper};hit1,end;{v:ShopChoice}",
+            "    mlvar;AnnaStock;it.remove('{v:ShopChoice}')",
+            "  elif;DB.items.get('{v:ShopChoice}').value.value <= game.get_money()",
+            "    move;Player;Lord;immediate;closest",
+            "    give_money;{e:-1 * DB.items.get('{v:ShopChoice}').value.value}",
+            "    give_item;{v:Shopper};{v:ShopChoice};force_give",
+            "    interact;{v:Shopper};{v:Shopper};hit1,end;{v:ShopChoice}",
+            "    mlvar;AnnaStock;it.remove('{v:ShopChoice}')",
+            "  else",
+            "    s;;You don't have enough money.",
+            "    trigger_script;0 Anna Shop Menu",
+            "  end",
+            "end",
+            "remove_table;GoldDisplay"
+        ],
+        "nid": "0 Anna Shop Menu"
+    }
+]

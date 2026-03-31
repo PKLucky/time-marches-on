@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Camaraderie",
+        "name": "Camaraderie",
+        "desc": "If unit is within three spaces of an ally, recovers 10% HP at the start of the turn.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            9,
+            34
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "condition",
+                "unit_funcs.check_focus(unit,3) > 0"
+            ],
+            [
+                "regeneration",
+                0.1
+            ]
+        ]
+    }
+]

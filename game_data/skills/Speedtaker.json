@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Speedtaker",
+        "name": "Speedtaker",
+        "desc": "Grants a stacking buff of +2 Speed (Max +6) to the user after defeating a foe.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            3,
+            26
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "gain_skill_after_kill",
+                "Speedtaker_Effect"
+            ]
+        ]
+    }
+]

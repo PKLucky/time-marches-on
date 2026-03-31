@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "Hex",
+        "name": "Hex",
+        "desc": "Inflicts -15 Hit on all enemies within three spaces of the unit.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            35
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "aura",
+                "Hex_Aura"
+            ],
+            [
+                "aura_range",
+                3
+            ],
+            [
+                "aura_target",
+                "enemy"
+            ]
+        ]
+    }
+]

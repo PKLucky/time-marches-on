@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Miracle",
+        "name": "Miracle",
+        "desc": "Proc: Skl/2%\nUnit survives a lethal blow.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            5,
+            32
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "defense_proc",
+                "Miracle_Proc"
+            ],
+            [
+                "proc_rate",
+                "CRIT_HIT"
+            ]
+        ]
+    }
+]

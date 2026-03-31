@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Magic_Plus3",
+        "name": "Magic +3",
+        "desc": "Grants Mag +3.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            2
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        3
+                    ]
+                ]
+            ],
+            [
+                "lost_on_upkeep",
+                null
+            ]
+        ]
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Death Lord",
+        "trigger": "combat_death",
+        "level_nid": "0",
+        "condition": "v('Month') > 11 and unit.nid == 'Lord'",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "hide_combat_ui",
+            "m;Pale Warmth",
+            "u;Lord;RightCorner;;CloseEyes",
+            "s;Lord;N-No{tgm}...{tgm} I can't fall here{tgm}...!|{c:e;Lord;HalfCloseEyes}{tgm}{e:v('JagenPronouns')['Address1C']} {v:JagenName}, help{tgm}...;StyleNid=boss_convo_right;MessageTail=None",
+            "e;Lord;CloseEyes",
+            "r;Lord",
+            "show_combat_ui",
+            "lose_game"
+        ],
+        "nid": "0 Death Lord"
+    }
+]

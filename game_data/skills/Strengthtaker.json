@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Strengthtaker",
+        "name": "Strengthtaker",
+        "desc": "Grants a stacking buff of +2 Strength (Max +6) to the user after defeating a foe.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            0,
+            26
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "gain_skill_after_kill",
+                "Strengthtaker_Effect"
+            ]
+        ]
+    }
+]

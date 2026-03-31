@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Rally_Movement",
+        "name": "Rally Movement",
+        "desc": "All adjacent allies gain +1 Movement on activation.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            15,
+            24
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "Rally_Movement"
+            ]
+        ]
+    }
+]

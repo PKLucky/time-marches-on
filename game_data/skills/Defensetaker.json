@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Defensetaker",
+        "name": "Defensetaker",
+        "desc": "Grants a stacking buff of +2 Defense (Max +6) to the user after defeating a foe.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            5,
+            26
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "gain_skill_after_kill",
+                "Defensetaker_Effect"
+            ]
+        ]
+    }
+]

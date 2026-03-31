@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Swap",
+        "name": "Swap",
+        "desc": "User trades places with an adjacent ally.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            50
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "Pivot"
+            ]
+        ]
+    }
+]

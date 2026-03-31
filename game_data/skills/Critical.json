@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Critical",
+        "name": "Critical",
+        "desc": "Proc: Lck%\nAllows unit to deal critical damage.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            14
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "attack_proc",
+                "Critical_Proc"
+            ],
+            [
+                "proc_rate",
+                "CRIT_AVOID"
+            ]
+        ]
+    }
+]

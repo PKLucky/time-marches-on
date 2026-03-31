@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "ActivityPoints",
+        "name": "Activity Points (AP)",
+        "desc": "How many activity points you have left to spend for this month.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            1,
+            50
+        ],
+        "components": [
+            [
+                "stack",
+                18
+            ],
+            [
+                "condition",
+                "game.is_roam() == True"
+            ],
+            [
+                "hidden",
+                null
+            ],
+            [
+                "lost_on_end_chapter",
+                null
+            ]
+        ]
+    }
+]

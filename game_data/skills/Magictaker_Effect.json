@@ -1,0 +1,31 @@
+[
+    {
+        "nid": "Magictaker_Effect",
+        "name": "Magictaker",
+        "desc": "Grants +2 Magic (Max +6).",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            1,
+            26
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        2
+                    ]
+                ]
+            ],
+            [
+                "stack",
+                3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
+            ]
+        ]
+    }
+]

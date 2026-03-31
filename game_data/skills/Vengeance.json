@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Vengeance",
+        "name": "Vengeance",
+        "desc": "Adds (Max HP - Current HP) to damage dealt.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            11,
+            32
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "eval_damage",
+                "unit.get_max_hp() - unit.get_hp()"
+            ]
+        ]
+    }
+]

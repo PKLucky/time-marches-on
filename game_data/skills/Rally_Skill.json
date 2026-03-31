@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Rally_Skill",
+        "name": "Rally Skill",
+        "desc": "All adjacent allies gain +3 Skill on activation.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            9,
+            24
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ability",
+                "Rally_Skill"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "name": "Barracks Choice",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "choice;WeaponChoice;Which weapon will {e:u('{unit}').name} use?;Sword,Lance,Axe,Bow,Anima,Light,Dark,Staff;Dimensions=3,3;backable",
+            "if;v('WeaponChoice') == 'BACK'",
+            "  finish",
+            "elif;u('{unit}').wexp[v('WeaponChoice')] == 251",
+            "  sound;Error",
+            "  alert;Weapon level is already maxed out!",
+            "  trigger_script;0 Barracks Choice;{unit}",
+            "end",
+            "if;unit.nid == 'Lord'",
+            "  lvar;LordWeapon;v('WeaponChoice')",
+            "else",
+            "  lvar;JagenWeapon;v('WeaponChoice')",
+            "end"
+        ],
+        "nid": "0 Barracks Choice"
+    }
+]

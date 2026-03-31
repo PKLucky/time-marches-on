@@ -1,0 +1,36 @@
+[
+    {
+        "nid": "StrengthPlus",
+        "name": "Strength+",
+        "desc": "Grants additional STR.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            1
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "STR",
+                        7
+                    ]
+                ]
+            ],
+            [
+                "time",
+                7
+            ],
+            [
+                "upkeep_stat_change",
+                [
+                    [
+                        "STR",
+                        -1
+                    ]
+                ]
+            ]
+        ]
+    }
+]

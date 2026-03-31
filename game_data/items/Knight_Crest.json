@@ -1,0 +1,86 @@
+[
+    {
+        "nid": "Knight_Crest",
+        "name": "Knight Crest",
+        "desc": "Increases Strength, Skill, and Defense growth rates, but lowers Magic, Speed, and Resistance growth rates. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Boosters_1",
+        "icon_index": [
+            0,
+            10
+        ],
+        "components": [
+            [
+                "usable",
+                null
+            ],
+            [
+                "value",
+                2500
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "usable_in_base",
+                null
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "map_cast_pose",
+                null
+            ],
+            [
+                "permanent_growth_change",
+                [
+                    [
+                        "STR",
+                        10
+                    ],
+                    [
+                        "DEF",
+                        10
+                    ],
+                    [
+                        "SKL",
+                        10
+                    ],
+                    [
+                        "MAG",
+                        -10
+                    ],
+                    [
+                        "RES",
+                        -10
+                    ],
+                    [
+                        "SPD",
+                        -10
+                    ]
+                ]
+            ],
+            [
+                "event_after_combat_on_hit",
+                "Global Growth Rate Alert"
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    }
+]

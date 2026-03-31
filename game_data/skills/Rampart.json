@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Rampart",
+        "name": "Rampart",
+        "desc": "Enemy takes 3 more damage if unit's Defense is greater than enemy's Defense.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            15
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "unit.get_stat('DEF') > target.get_stat('DEF')"
+            ],
+            [
+                "damage",
+                3
+            ]
+        ]
+    }
+]

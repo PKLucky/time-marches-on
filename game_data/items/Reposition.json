@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "Reposition",
+        "name": "Reposition",
+        "desc": "Moves an ally to the space directly behind the user.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            46
+        ],
+        "components": [
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "bypass_shove",
+                -2
+            ]
+        ]
+    }
+]

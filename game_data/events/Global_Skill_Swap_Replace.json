@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Skill_Swap_Replace",
+        "trigger": null,
+        "level_nid": null,
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "choice;SkillToLearn;Learned Skills;{v:LearnedSkills};100;vert;top_right;;;type_skill;5,1;left;backable",
+            "if;v('SkillToLearn') != 'BACK'",
+            "  game_var;AUX_STR;\"\"",
+            "  for;FetchedSkill;[s for s in u('{unit}').get_field('EquippedSkills')]",
+            "    remove_skill;{unit};{FetchedSkill};no_banner",
+            "    if;'{FetchedSkill}' == '{v:UnitSelectedSkill}'",
+            "      game_var;AUX_STR;\"{v:AUX_STR}\" + \"'{v:SkillToLearn}',\"",
+            "      give_skill;{unit};{v:SkillToLearn};no_banner",
+            "    else",
+            "      game_var;AUX_STR;\"{v:AUX_STR}\" + \"'{FetchedSkill}',\"",
+            "      give_skill;{unit};{FetchedSkill};no_banner",
+            "    end",
+            "  endf",
+            "  set_unit_field;{unit};EquippedSkills;[{v:AUX_STR}]",
+            "end"
+        ],
+        "nid": "Global Skill_Swap_Replace"
+    }
+]

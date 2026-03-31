@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Live_To_Serve",
+        "name": "Live To Serve",
+        "desc": "When using a staff, user heals for the same amount healed to an ally.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            52
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "condition",
+                "item_system.weapon_type(unit, item) == 'Staff'"
+            ],
+            [
+                "live_to_serve",
+                1.0
+            ]
+        ]
+    }
+]

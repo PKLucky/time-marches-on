@@ -1,0 +1,143 @@
+[
+    {
+        "nid": "Myrmidon",
+        "name": "Myrmidon",
+        "desc": "Talented swordsmen skilled in swift killing strokes.",
+        "tier": 1,
+        "movement_group": "Light Foot",
+        "promotes_from": null,
+        "turns_into": [
+            "Swordmaster",
+            "Assassin"
+        ],
+        "tags": [
+            "Sword"
+        ],
+        "max_level": 20,
+        "bases": {
+            "HP": 21,
+            "STR": 6,
+            "MAG": 4,
+            "SKL": 11,
+            "SPD": 12,
+            "LCK": 2,
+            "DEF": 4,
+            "CON": 8,
+            "MOV": 5,
+            "RES": 3
+        },
+        "growths": {
+            "HP": 80,
+            "STR": 35,
+            "MAG": 17,
+            "SKL": 40,
+            "SPD": 20,
+            "LCK": 10,
+            "DEF": 35,
+            "CON": 0,
+            "MOV": 0,
+            "RES": 40
+        },
+        "growth_bonus": {
+            "HP": -10,
+            "STR": 0,
+            "MAG": 0,
+            "SKL": 0,
+            "SPD": 20,
+            "LCK": 20,
+            "DEF": -20,
+            "CON": 0,
+            "MOV": 0,
+            "RES": 20
+        },
+        "promotion": {
+            "HP": -98,
+            "STR": -98,
+            "MAG": -98,
+            "SKL": -98,
+            "SPD": -98,
+            "LCK": -98,
+            "DEF": -98,
+            "CON": -98,
+            "MOV": 0,
+            "RES": -98
+        },
+        "max_stats": {
+            "HP": 60,
+            "STR": 20,
+            "MAG": 20,
+            "SKL": 20,
+            "SPD": 20,
+            "LCK": 30,
+            "DEF": 20,
+            "CON": 20,
+            "MOV": 15,
+            "RES": 20
+        },
+        "learned_skills": [],
+        "wexp_gain": {
+            "Sword": [
+                true,
+                10,
+                251
+            ],
+            "Lance": [
+                false,
+                0,
+                251
+            ],
+            "Axe": [
+                false,
+                0,
+                251
+            ],
+            "Bow": [
+                false,
+                0,
+                251
+            ],
+            "Staff": [
+                false,
+                0,
+                251
+            ],
+            "Light": [
+                false,
+                0,
+                251
+            ],
+            "Anima": [
+                false,
+                0,
+                251
+            ],
+            "Dark": [
+                false,
+                0,
+                251
+            ],
+            "Default": [
+                false,
+                0,
+                251
+            ]
+        },
+        "icon_nid": "Generic_Portrait_Myrmidon",
+        "icon_index": [
+            0,
+            0
+        ],
+        "map_sprite_nid": "Myrmidon",
+        "combat_anim_nid": "Myrmidon",
+        "fields": [
+            [
+                "Strengths",
+                "Speed, Luck, Resistance"
+            ],
+            [
+                "Weaknesses",
+                "HP, Defense"
+            ]
+        ]
+    }
+]

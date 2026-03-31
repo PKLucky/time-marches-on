@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Healtouch",
+        "name": "Healtouch",
+        "desc": "Heals an additional 5 HP when using a staff.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            5,
+            37
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "condition",
+                "item_system.weapon_type(unit, item) == 'Staff'"
+            ],
+            [
+                "empower_heal",
+                "5"
+            ]
+        ]
+    }
+]

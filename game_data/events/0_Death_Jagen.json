@@ -1,0 +1,22 @@
+[
+    {
+        "name": "Death Jagen",
+        "trigger": "combat_death",
+        "level_nid": "0",
+        "condition": "v('Month') > 11 and unit.nid == 'Player'",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "hide_combat_ui",
+            "m;Pale Warmth",
+            "u;Player;RightCorner;;HalfCloseEyes",
+            "s;Player;{e:v('LordPronouns')['Address1C']} {v:LordName}, I apologize{tgm}...{tgm} I couldn't{tgm}...;StyleNid=boss_convo_right;MessageTail=None",
+            "e;Player;CloseEyes",
+            "r;Player",
+            "show_combat_ui",
+            "mf"
+        ],
+        "nid": "0 Death Jagen"
+    }
+]

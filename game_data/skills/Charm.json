@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "Charm",
+        "name": "Charm",
+        "desc": "Grants +15 Hit/Avo to allies within three spaces of the unit.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            32
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "aura",
+                "Charm_Aura"
+            ],
+            [
+                "aura_range",
+                3
+            ],
+            [
+                "aura_target",
+                "ally"
+            ]
+        ]
+    }
+]

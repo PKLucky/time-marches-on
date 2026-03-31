@@ -1,0 +1,55 @@
+[
+    {
+        "nid": "HigherDifficulty",
+        "name": "HigherDifficulty",
+        "desc": "Hidden skill to give higher growth rates to the enemies in end game.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            16
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        50
+                    ],
+                    [
+                        "STR",
+                        30
+                    ],
+                    [
+                        "MAG",
+                        30
+                    ],
+                    [
+                        "SKL",
+                        30
+                    ],
+                    [
+                        "SPD",
+                        30
+                    ],
+                    [
+                        "LCK",
+                        30
+                    ],
+                    [
+                        "DEF",
+                        30
+                    ],
+                    [
+                        "RES",
+                        30
+                    ]
+                ]
+            ]
+        ]
+    }
+]

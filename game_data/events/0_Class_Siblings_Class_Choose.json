@@ -1,0 +1,29 @@
+[
+    {
+        "name": "Class Siblings Class Choose",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "if;u('{unit}').nid in game.level.unit_groups.get('tier1').units",
+            "  lvar;GetSiblingClass;game.get_random_choice(v('LordClassList'))",
+            "  if;v('GetSiblingClass') in v('SiblingClasses')",
+            "    trigger_script;0 Class Siblings Class Choose",
+            "  else",
+            "    mlvar;SiblingClasses;it.append('{v:GetSiblingClass}')",
+            "  end",
+            "else",
+            "  lvar;GetSiblingClass;game.get_random_choice(v('JagenClassList'))",
+            "  if;v('GetSiblingClass') in v('SiblingClasses')",
+            "    trigger_script;0 Class Siblings Class Choose",
+            "  else",
+            "    mlvar;SiblingClasses;it.append('{v:GetSiblingClass}')",
+            "  end",
+            "end"
+        ],
+        "nid": "0 Class Siblings Class Choose"
+    }
+]

@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Calvary_Orders",
+        "name": "Calvary Orders",
+        "desc": "Unit can warp to a tile adjacent to an ally on horseback.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            3,
+            31
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "witch_warp_expression",
+                "'Horse' in unit.tags"
+            ]
+        ]
+    }
+]

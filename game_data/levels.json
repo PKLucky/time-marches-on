@@ -277,7 +277,9 @@
                 "klass": "Citizen",
                 "faction": "Soldier",
                 "starting_items": [],
-                "starting_skills": [],
+                "starting_skills": [
+                    "HigherDifficulty"
+                ],
                 "team": "enemy",
                 "ai": "Attack",
                 "roam_ai": null,
@@ -296,7 +298,9 @@
                 "klass": "Citizen",
                 "faction": "Soldier",
                 "starting_items": [],
-                "starting_skills": [],
+                "starting_skills": [
+                    "HigherDifficulty"
+                ],
                 "team": "enemy",
                 "ai": "Attack",
                 "roam_ai": null,
@@ -315,7 +319,9 @@
                 "klass": "Citizen",
                 "faction": "Soldier",
                 "starting_items": [],
-                "starting_skills": [],
+                "starting_skills": [
+                    "HigherDifficulty"
+                ],
                 "team": "enemy",
                 "ai": "Attack",
                 "roam_ai": null,
@@ -334,7 +340,9 @@
                 "klass": "Citizen",
                 "faction": "Soldier",
                 "starting_items": [],
-                "starting_skills": [],
+                "starting_skills": [
+                    "HigherDifficulty"
+                ],
                 "team": "enemy",
                 "ai": "Attack",
                 "roam_ai": null,
@@ -353,7 +361,9 @@
                 "klass": "Citizen",
                 "faction": "Soldier",
                 "starting_items": [],
-                "starting_skills": [],
+                "starting_skills": [
+                    "HigherDifficulty"
+                ],
                 "team": "enemy",
                 "ai": "Attack",
                 "roam_ai": null,
@@ -372,7 +382,9 @@
                 "klass": "Citizen",
                 "faction": "Soldier",
                 "starting_items": [],
-                "starting_skills": [],
+                "starting_skills": [
+                    "HigherDifficulty"
+                ],
                 "team": "enemy",
                 "ai": "Attack",
                 "roam_ai": null,
@@ -391,7 +403,9 @@
                 "klass": "Citizen",
                 "faction": "Soldier",
                 "starting_items": [],
-                "starting_skills": [],
+                "starting_skills": [
+                    "HigherDifficulty"
+                ],
                 "team": "enemy",
                 "ai": "Attack",
                 "roam_ai": null,
@@ -410,7 +424,9 @@
                 "klass": "Citizen",
                 "faction": "Soldier",
                 "starting_items": [],
-                "starting_skills": [],
+                "starting_skills": [
+                    "HigherDifficulty"
+                ],
                 "team": "enemy",
                 "ai": "Attack",
                 "roam_ai": null,
@@ -892,33 +908,20 @@
         "tags": [],
         "units": [
             {
-                "nid": "Lord",
-                "team": "player",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": null,
-                "starting_position": [
-                    14,
-                    3
-                ],
-                "starting_traveler": null,
-                "generic": false
-            },
-            {
                 "nid": "103",
                 "variant": null,
                 "level": 1,
-                "klass": "Cavalier",
+                "klass": "Cleric",
                 "faction": "Soldier",
                 "starting_items": [
                     [
-                        "Iron_Sword",
+                        "Silence",
                         false
                     ]
                 ],
                 "starting_skills": [],
                 "team": "enemy",
-                "ai": "None",
+                "ai": "Attack",
                 "roam_ai": null,
                 "ai_group": "",
                 "starting_position": [
@@ -929,32 +932,19 @@
                 "generic": true
             },
             {
-                "nid": "Player",
-                "team": "player",
-                "ai": "None",
-                "roam_ai": null,
-                "ai_group": null,
-                "starting_position": [
-                    5,
-                    8
-                ],
-                "starting_traveler": null,
-                "generic": false
-            },
-            {
                 "nid": "101",
                 "variant": null,
-                "level": 20,
-                "klass": "Thief",
+                "level": 1,
+                "klass": "Knight",
                 "faction": "Soldier",
                 "starting_items": [
                     [
-                        "Iron_Sword",
+                        "Iron_Lance",
                         false
                     ]
                 ],
                 "starting_skills": [
-                    "Wary_Fighter"
+                    "Astra"
                 ],
                 "team": "player",
                 "ai": "None",
@@ -963,6 +953,25 @@
                 "starting_position": [
                     4,
                     8
+                ],
+                "starting_traveler": null,
+                "generic": true
+            },
+            {
+                "nid": "102",
+                "variant": null,
+                "level": 1,
+                "klass": "Monk",
+                "faction": "Soldier",
+                "starting_items": [],
+                "starting_skills": [],
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    4,
+                    6
                 ],
                 "starting_traveler": null,
                 "generic": true
@@ -982,6 +991,19 @@
                 "starting_position": null,
                 "starting_traveler": null,
                 "generic": true
+            },
+            {
+                "nid": "Lord",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    5,
+                    8
+                ],
+                "starting_traveler": null,
+                "generic": false
             }
         ],
         "regions": [

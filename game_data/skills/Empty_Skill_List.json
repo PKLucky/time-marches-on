@@ -1,0 +1,13 @@
+[
+    {
+        "nid": "Empty_Skill_List",
+        "name": "Empty Skill List",
+        "desc": "",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            16
+        ],
+        "components": []
+    }
+]

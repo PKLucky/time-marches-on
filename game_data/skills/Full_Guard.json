@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Full_Guard",
+        "name": "Full Guard",
+        "desc": "Negates effective damage against this unit.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            15,
+            22
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "negate",
+                null
+            ]
+        ]
+    }
+]

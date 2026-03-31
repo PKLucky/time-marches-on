@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Wings_Of_Mercy",
+        "name": "Wings Of Mercy",
+        "desc": "Unit can warp to a tile adjacent to an ally who is at 50% Max HP or less.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            50
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "witch_warp_expression",
+                "unit.get_hp() <= unit.get_max_hp() // 2"
+            ]
+        ]
+    }
+]

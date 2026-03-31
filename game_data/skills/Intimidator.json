@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Intimidator",
+        "name": "Intimidator",
+        "desc": "Enemy deals 3 less damage if unit's Strength is greater than enemy's Strength.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            1,
+            15
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "unit.get_stat('STR') > target.get_stat('STR')"
+            ],
+            [
+                "resist",
+                3
+            ]
+        ]
+    }
+]

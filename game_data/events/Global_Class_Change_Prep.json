@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Class Change Prep",
+        "trigger": null,
+        "level_nid": null,
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "choice;Choice;Who will change class?;Lord|{v:LordName},Player|{v:JagenName};EntryType=type_unit;backable",
+            "if;v('Choice') == 'BACK'",
+            "  finish",
+            "end",
+            "if;v('Choice') == 'Lord'",
+            "  choice;Choice;Change to which class?;{v:LordClassFinalChoices};EntryType=type_class;Dimensions=5,2;scroll_bar;backable;expression",
+            "  if;v('Choice') != 'BACK'",
+            "    change_class;Lord;{v:Choice};silent",
+            "  end",
+            "elif;v('Choice') == 'Player'",
+            "  choice;Choice;Change to which class?;{v:JagenClassFinalChoices};EntryType=type_class;Dimensions=5,2;scroll_bar;backable;expression",
+            "  if;v('Choice') != 'BACK'",
+            "    change_class;Player;{v:Choice};silent",
+            "  end",
+            "end",
+            "if;v('Choice') != 'BACK'",
+            "  sound;Item",
+            "  alert;Changed class to {e:DB.classes.get('{v:Choice}').name}!",
+            "end"
+        ],
+        "nid": "Global Class Change Prep"
+    }
+]

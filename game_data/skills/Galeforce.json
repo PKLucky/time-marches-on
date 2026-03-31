@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Galeforce",
+        "name": "Galeforce",
+        "desc": "If unit initiates combat and defeats the target, unit may move again. (Once per turn)",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            7,
+            37
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "charges_per_turn",
+                1
+            ],
+            [
+                "modern_galeforce",
+                null
+            ]
+        ]
+    }
+]

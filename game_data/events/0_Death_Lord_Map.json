@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Death Lord Map",
+        "trigger": "unit_death",
+        "level_nid": "0",
+        "condition": "v('Month') > 11 and unit.nid == 'Lord' and unit2.nid == None",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "m;Pale Warmth",
+            "u;Lord;Right;;HalfCloseEyes",
+            "s;Lord;N-No{tgm}...{tgm} I can't fall here{tgm}...!|{tgm}{e:v('JagenPronouns')['Address1C']} {v:JagenName}, help{tgm}...",
+            "e;Lord;CloseEyes",
+            "r;Lord"
+        ],
+        "nid": "0 Death Lord Map"
+    }
+]

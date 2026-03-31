@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Life_And_Death",
+        "name": "Life And Death",
+        "desc": "Grants +3 to damage dealt AND damage received.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            5,
+            39
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "damage",
+                3
+            ],
+            [
+                "resist",
+                -3
+            ]
+        ]
+    }
+]

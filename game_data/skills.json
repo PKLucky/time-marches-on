@@ -1599,10 +1599,10 @@
         "nid": "Sure_Strike",
         "name": "Sure Strike",
         "desc": "Proc rate: SKL/2%\nEnsures the user's attack will hit the foe.",
-        "icon_nid": "Skills",
+        "icon_nid": "Skills_1",
         "icon_index": [
-            2,
-            5
+            7,
+            10
         ],
         "components": [
             [
@@ -1623,10 +1623,10 @@
         "nid": "Sure_Strike_Proc",
         "name": "Sure Strike",
         "desc": "Ensures the user's attack will hit the foe.",
-        "icon_nid": "Skills",
+        "icon_nid": "Skills_1",
         "icon_index": [
-            2,
-            5
+            7,
+            10
         ],
         "components": [
             [
@@ -1778,33 +1778,13 @@
         ]
     },
     {
-        "nid": "Thor_s_Ire",
-        "name": "Thor's Ire",
-        "desc": "+10 Crit Rate for one turn.",
-        "icon_nid": "Skills",
-        "icon_index": [
-            11,
-            3
-        ],
-        "components": [
-            [
-                "crit",
-                10
-            ],
-            [
-                "lost_on_upkeep",
-                null
-            ]
-        ]
-    },
-    {
         "nid": "Set_s_Litany",
         "name": "Set's Litany",
         "desc": "+10 Avo for one turn.",
-        "icon_nid": "Skills",
+        "icon_nid": "Skills_1",
         "icon_index": [
-            11,
-            9
+            1,
+            11
         ],
         "components": [
             [
@@ -1814,6 +1794,30 @@
             [
                 "lost_on_upkeep",
                 null
+            ]
+        ]
+    },
+    {
+        "nid": "Thor_s_Ire",
+        "name": "Thor's Ire",
+        "desc": "Allows unit to make a guaranteed critical hit for one turn.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            14
+        ],
+        "components": [
+            [
+                "lost_on_upkeep",
+                null
+            ],
+            [
+                "guaranteed_crit",
+                null
+            ],
+            [
+                "alternate_battle_anim",
+                "Critical"
             ]
         ]
     },
@@ -2028,7 +2032,7 @@
     {
         "nid": "Pursuit",
         "name": "Pursuit",
-        "desc": "If unit's Speed > target's Speed, unit performs a follow-up attack.",
+        "desc": "If unit's Speed is greater than target's Speed, unit performs a follow-up attack.",
         "icon_nid": "Skills_1",
         "icon_index": [
             3,
@@ -2052,7 +2056,7 @@
     {
         "nid": "Brave_Strike",
         "name": "Brave Strike",
-        "desc": "If unit's attack speed < target's attack speed, unit performs two consecutive attacks.",
+        "desc": "If unit's attack speed is less than target's attack speed, unit performs two consecutive attacks.",
         "icon_nid": "Skills_1",
         "icon_index": [
             1,
@@ -2071,7 +2075,7 @@
                 "astra_proc",
                 {
                     "extra_attacks": 1,
-                    "damage_percent": 0.5,
+                    "damage_percent": 1.0,
                     "show_proc_effects": true
                 }
             ]
@@ -2179,7 +2183,7 @@
             ],
             [
                 "condition",
-                "unit.get_hp() <= unit.get_max_hp()"
+                "unit.get_hp() < unit.get_max_hp()"
             ],
             [
                 "guaranteed_crit",
@@ -2286,25 +2290,9 @@
                 null
             ],
             [
-                "attack_proc",
-                "Astra_Proc"
-            ],
-            [
                 "proc_rate",
                 "CRIT_HIT"
-            ]
-        ]
-    },
-    {
-        "nid": "Astra_Proc",
-        "name": "Astra",
-        "desc": "Proc: Skl/2%\nUnit performs five consecutive hits.",
-        "icon_nid": "Skills_1",
-        "icon_index": [
-            9,
-            32
-        ],
-        "components": [
+            ],
             [
                 "astra_proc",
                 {
@@ -2331,7 +2319,7 @@
             ],
             [
                 "condition",
-                "unit.get_hp() <= unit.get_max_hp()"
+                "unit.get_hp() < unit.get_max_hp()"
             ],
             [
                 "vantage",
@@ -2607,7 +2595,7 @@
             ],
             [
                 "attack_proc",
-                "Canto"
+                "Dragon_Fang_Proc"
             ],
             [
                 "proc_rate",
@@ -2884,7 +2872,7 @@
             ],
             [
                 "condition",
-                "unit.get_hp() <= unit.get_max_hp()"
+                "unit.get_hp() < unit.get_max_hp()"
             ],
             [
                 "stat_change",
@@ -2989,7 +2977,7 @@
             ],
             [
                 "condition",
-                "unit.get_hp() <= unit.get_max_hp()"
+                "unit.get_hp() < unit.get_max_hp()"
             ],
             [
                 "hit",
@@ -4447,7 +4435,7 @@
     {
         "nid": "Intimidator",
         "name": "Intimidator",
-        "desc": "Enemy deals 3 less damage if unit's Strength > enemy's Strength.",
+        "desc": "Enemy deals 3 less damage if unit's Strength is greater than enemy's Strength.",
         "icon_nid": "Skills_1",
         "icon_index": [
             1,
@@ -4471,7 +4459,7 @@
     {
         "nid": "Intellectual",
         "name": "Intellectual",
-        "desc": "Enemy deals 3 less damage if unit's Magic > enemy's Magic.",
+        "desc": "Enemy deals 3 less damage if unit's Magic is greater than enemy's Magic.",
         "icon_nid": "Skills_1",
         "icon_index": [
             2,
@@ -4495,7 +4483,7 @@
     {
         "nid": "Rampart",
         "name": "Rampart",
-        "desc": "Enemy takes 3 more damage if unit's Defense > enemy's Defense.",
+        "desc": "Enemy takes 3 more damage if unit's Defense is greater than enemy's Defense.",
         "icon_nid": "Skills_1",
         "icon_index": [
             6,
@@ -4519,7 +4507,7 @@
     {
         "nid": "Ethereal",
         "name": "Ethereal",
-        "desc": "Enemy takes 3 more damage if unit's Resistance > enemy's Resistance.",
+        "desc": "Enemy takes 3 more damage if unit's Resistance is greater than enemy's Resistance.",
         "icon_nid": "Skills_1",
         "icon_index": [
             7,
@@ -4537,6 +4525,241 @@
             [
                 "damage",
                 3
+            ]
+        ]
+    },
+    {
+        "nid": "Gamble",
+        "name": "Gamble",
+        "desc": "<red>Combat Art:</> Unit will perform a guaranteed critical hit, but has Hit reduced by 20.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            8,
+            50
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_art",
+                "Gamble_CA"
+            ]
+        ]
+    },
+    {
+        "nid": "Gamble_CA",
+        "name": "Gamble",
+        "desc": "Unit will perform a guaranteed critical hit, but has Hit reduced by 20.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            8,
+            50
+        ],
+        "components": [
+            [
+                "hit",
+                -20
+            ],
+            [
+                "guaranteed_crit",
+                null
+            ],
+            [
+                "alternate_battle_anim",
+                "Critical"
+            ]
+        ]
+    },
+    {
+        "nid": "Focus",
+        "name": "Focus",
+        "desc": "Unit makes a guaranteed critical hit if no allies are within three spaces of them.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            5,
+            21
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "condition",
+                "unit_funcs.check_focus(unit, 3) == 0"
+            ],
+            [
+                "guaranteed_crit",
+                null
+            ],
+            [
+                "alternate_battle_anim",
+                "Critical"
+            ]
+        ]
+    },
+    {
+        "nid": "Solidarity",
+        "name": "Solidarity",
+        "desc": "Unit makes a guaranteed critical hit if an ally is within three spaces of them.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            1,
+            45
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "condition",
+                "unit_funcs.check_focus(unit, 3) > 0"
+            ],
+            [
+                "guaranteed_crit",
+                null
+            ],
+            [
+                "alternate_battle_anim",
+                "Critical"
+            ]
+        ]
+    },
+    {
+        "nid": "Rivalry",
+        "name": "Rivalry",
+        "desc": "If an adjacent ally defeats a foe, unit can make a guaranteed critical hit. (Buff lost at the end of combat/turn.)",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            12,
+            50
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "ally_gain_skill_after_active_kill",
+                "Rivalry_Child"
+            ]
+        ]
+    },
+    {
+        "nid": "Rivalry_Child",
+        "name": "Rivalry",
+        "desc": "Unit makes a guaranteed critical hit.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            12,
+            50
+        ],
+        "components": [
+            [
+                "unit_flickering_tint",
+                [
+                    255,
+                    30,
+                    0
+                ]
+            ],
+            [
+                "lost_on_upkeep",
+                null
+            ],
+            [
+                "lost_on_end_combat2",
+                {
+                    "lost_on_self": true,
+                    "lost_on_ally": true,
+                    "lost_on_enemy": true,
+                    "lost_on_splash": true,
+                    "only_if_initiated": false
+                }
+            ],
+            [
+                "guaranteed_crit",
+                null
+            ],
+            [
+                "alternate_battle_anim",
+                "Critical"
+            ]
+        ]
+    },
+    {
+        "nid": "Full_Guard",
+        "name": "Full Guard",
+        "desc": "Negates effective damage against this unit.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            15,
+            22
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "negate",
+                null
+            ]
+        ]
+    },
+    {
+        "nid": "HigherDifficulty",
+        "name": "HigherDifficulty",
+        "desc": "Hidden skill to give higher growth rates to the enemies in end game.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            6,
+            16
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "growth_change",
+                [
+                    [
+                        "HP",
+                        50
+                    ],
+                    [
+                        "STR",
+                        30
+                    ],
+                    [
+                        "MAG",
+                        30
+                    ],
+                    [
+                        "SKL",
+                        30
+                    ],
+                    [
+                        "SPD",
+                        30
+                    ],
+                    [
+                        "LCK",
+                        30
+                    ],
+                    [
+                        "DEF",
+                        30
+                    ],
+                    [
+                        "RES",
+                        30
+                    ]
+                ]
             ]
         ]
     }

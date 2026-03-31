@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Class Siblings Lord Choice",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "if;[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'ClassSkill'][0]",
+            "  textbox;ClassInfoTable;<yellow>Weapons:</> {e:', '.join(w for w in DB.classes.get('{v:SiblingKlass}').wexp_gain if DB.classes.get('{v:SiblingKlass}').wexp_gain[w].usable == True)}{br}<yellow>Growth Rate Changes:</>{br}<green>{e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'Strengths'][0]}</>, <red>{e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'Weaknesses'][0]}</>{br}<yellow>Class Skills:</> {e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'ClassSkill'][0]}{br}<yellow>Constitution:</> {e:u(v('SiblingNid')).stats['CON']};bottom_left;150;6;;0.25",
+            "else",
+            "  textbox;ClassInfoTable;<yellow>Weapons:</> {e:', '.join(w for w in DB.classes.get('{v:SiblingKlass}').wexp_gain if DB.classes.get('{v:SiblingKlass}').wexp_gain[w].usable == True)}{br}<yellow>Growth Rate Changes:</>{br}<green>{e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'Strengths'][0]}</>, <red>{e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'Weaknesses'][0]}</>{br}<yellow>Class Skills:</> None{br}<yellow>Constitution:</> {e:u(v('SiblingNid')).stats['CON']};bottom_left;150;6;;0.25",
+            "end",
+            "choice;LordKlassChange;Change {v:LordName}'s class to {e:DB.classes.get(v('SiblingKlass')).name}?;Yes,No;;horizontal;top;backable",
+            "if;v('LordKlassChange') == 'Yes'",
+            "  if;v('SiblingKlass') in v('LordClassFinal')",
+            "    change_class;Lord;{v:SiblingKlass};silent",
+            "    sound;Item",
+            "    alert;Changed class to {e:DB.classes.get('{v:SiblingKlass}').name}!",
+            "  else",
+            "    change_class;Lord;{v:SiblingKlass}",
+            "  end",
+            "  lvar;ChoiceMade;True",
+            "  if;v('SiblingKlass') not in v('LordClassFinal')",
+            "    mlvar;LordClassFinal;it.append(v('SiblingKlass'))",
+            "  end",
+            "end"
+        ],
+        "nid": "0 Class Siblings Lord Choice"
+    }
+]

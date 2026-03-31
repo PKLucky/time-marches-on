@@ -13,7 +13,7 @@
     {
         "nid": "Fire",
         "name": "Fire",
-        "desc": "Grants increased might, accuracy, and avoid.",
+        "desc": "Grants increased damage, accuracy, and avoid.",
         "bonus": [
             {
                 "support_rank": "C",

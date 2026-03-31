@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "Wary_Fighter",
+        "name": "Wary Fighter",
+        "desc": "Unit and target cannot perform follow-up attacks.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            4,
+            32
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "skill_before_combat",
+                {
+                    "skill": "Wary_Fighter_Enemy",
+                    "recipient": "target",
+                    "allegiance": "enemy"
+                }
+            ],
+            [
+                "cannot_double",
+                null
+            ]
+        ]
+    }
+]

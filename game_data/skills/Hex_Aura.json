@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Hex_Aura",
+        "name": "Hex",
+        "desc": "Inflicts -15 Hit",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            35
+        ],
+        "components": [
+            [
+                "hit",
+                -15
+            ]
+        ]
+    }
+]

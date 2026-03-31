@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Change Affinity",
+        "trigger": null,
+        "level_nid": null,
+        "condition": "'Affinity' in item.tags",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "change_affinity;{unit};{e:DB.items.get(item.nid).nid[0:-6]}",
+            "sound;Item",
+            "alert;Affinity changed!"
+        ],
+        "nid": "Global Change Affinity"
+    }
+]

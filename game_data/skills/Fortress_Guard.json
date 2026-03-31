@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Fortress_Guard",
+        "name": "Fortress Guard",
+        "desc": "Reduces damage received AND damage dealt by 3.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            14,
+            34
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "damage",
+                -3
+            ],
+            [
+                "resist",
+                3
+            ]
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Movement_Plus1",
+        "name": "Movement +1",
+        "desc": "Grants Mov +1.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            0,
+            8
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MOV",
+                        1
+                    ]
+                ]
+            ],
+            [
+                "lost_on_upkeep",
+                null
+            ]
+        ]
+    }
+]

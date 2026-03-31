@@ -1,0 +1,47 @@
+[
+    {
+        "nid": "ScrollInspiration",
+        "name": "Inspiration Scroll",
+        "desc": "Grants +3 damage dealt and +3 resist to allies within three spaces. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            0,
+            52
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                1000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    }
+]

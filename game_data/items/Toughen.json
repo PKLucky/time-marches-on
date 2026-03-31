@@ -1,0 +1,77 @@
+[
+    {
+        "nid": "Toughen",
+        "name": "Toughen",
+        "desc": "Raises ally's strength.",
+        "icon_nid": "Staff",
+        "icon_index": [
+            0,
+            12
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "value",
+                2250
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                1
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "C"
+            ],
+            [
+                "uses",
+                15
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "exp",
+                17
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    255,
+                    0,
+                    0
+                ]
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "wexp",
+                4
+            ],
+            [
+                "status_on_hit",
+                "StrengthPlus"
+            ]
+        ]
+    }
+]

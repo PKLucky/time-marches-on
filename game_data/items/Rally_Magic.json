@@ -1,0 +1,42 @@
+[
+    {
+        "nid": "Rally_Magic",
+        "name": "Rally Mag",
+        "desc": "All adjacent allies gain +3 Magic on activation.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            13,
+            24
+        ],
+        "components": [
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "min_range",
+                0
+            ],
+            [
+                "max_range",
+                0
+            ],
+            [
+                "map_hit_sfx",
+                "Rally"
+            ],
+            [
+                "map_cast_anim",
+                "AOE_Rally"
+            ],
+            [
+                "exp",
+                11
+            ],
+            [
+                "event_on_hit",
+                "Global Rally"
+            ]
+        ]
+    }
+]

@@ -1,0 +1,34 @@
+[
+    {
+        "nid": "Dragon_Ward",
+        "name": "Dragon Ward",
+        "desc": "Adjacent allies take half damage.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            11,
+            22
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "aura",
+                "Dragon_Ward_Aura"
+            ],
+            [
+                "aura_range",
+                1
+            ],
+            [
+                "aura_target",
+                "ally"
+            ],
+            [
+                "hide_aura",
+                null
+            ]
+        ]
+    }
+]

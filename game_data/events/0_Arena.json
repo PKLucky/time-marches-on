@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Arena",
+        "trigger": "Arena",
+        "level_nid": "0",
+        "condition": "game.is_roam() == False",
+        "commands": [],
+        "only_once": true,
+        "priority": 20,
+        "_source": [
+            "s;;A sign is hung up on{br}the entrance:;;;hint;NumLines=2",
+            "s;;<red>\"Arena closed due to troublemakers!\"</>;;110;hint;NumLines=2",
+            "remove_region;arena"
+        ],
+        "nid": "0 Arena"
+    }
+]

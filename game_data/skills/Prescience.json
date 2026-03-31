@@ -1,0 +1,30 @@
+[
+    {
+        "nid": "Prescience",
+        "name": "Prescience",
+        "desc": "If unit initiates combat, grants +15 Hit/Avoid.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            0,
+            39
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "combat_condition",
+                "mode == 'attack'"
+            ],
+            [
+                "hit",
+                15
+            ],
+            [
+                "avoid",
+                15
+            ]
+        ]
+    }
+]

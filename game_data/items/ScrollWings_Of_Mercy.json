@@ -1,0 +1,47 @@
+[
+    {
+        "nid": "ScrollWings_Of_Mercy",
+        "name": "Wings Of Mercy Scroll",
+        "desc": "Unit can warp to a tile adjacent to an ally who is at 50% Max HP or less. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            50
+        ],
+        "components": [
+            [
+                "event_after_combat_on_hit",
+                "Global Skill_Learn"
+            ],
+            [
+                "item_tags",
+                [
+                    "SkillScroll"
+                ]
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "value",
+                3000
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    }
+]

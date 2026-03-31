@@ -1,0 +1,26 @@
+[
+    {
+        "nid": "Trample",
+        "name": "Trample",
+        "desc": "Grants +5 damage dealt to non-mounted units.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            12,
+            34
+        ],
+        "components": [
+            [
+                "class_skill",
+                null
+            ],
+            [
+                "condition",
+                "'Mounted' not in target.tags"
+            ],
+            [
+                "damage",
+                5
+            ]
+        ]
+    }
+]

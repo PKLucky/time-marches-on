@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Speed_Plus3",
+        "name": "Speed +3",
+        "desc": "Grants Skl +3.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            4
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SPD",
+                        3
+                    ]
+                ]
+            ],
+            [
+                "lost_on_upkeep",
+                null
+            ]
+        ]
+    }
+]

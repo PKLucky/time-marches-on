@@ -1,0 +1,22 @@
+[
+    {
+        "nid": "Devil_Luck_Proc",
+        "name": "Backfire!",
+        "desc": "Skill gained by equipping the Devil Axe.\nReceives damage equal to damage dealt.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            11,
+            34
+        ],
+        "components": [
+            [
+                "hidden",
+                null
+            ],
+            [
+                "devil_axe_gba",
+                "Affect attacks done by unit"
+            ]
+        ]
+    }
+]

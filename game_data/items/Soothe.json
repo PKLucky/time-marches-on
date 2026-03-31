@@ -1,0 +1,107 @@
+[
+    {
+        "nid": "Soothe",
+        "name": "Soothe",
+        "desc": "Restores an ally's HP from afar. Infantry classes only.",
+        "icon_nid": "New",
+        "icon_index": [
+            2,
+            6
+        ],
+        "components": [
+            [
+                "spell",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "weapon_type",
+                "Staff"
+            ],
+            [
+                "weapon_rank",
+                "E"
+            ],
+            [
+                "magic",
+                null
+            ],
+            [
+                "uses",
+                20
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "wexp",
+                2
+            ],
+            [
+                "exp",
+                32
+            ],
+            [
+                "value",
+                1000
+            ],
+            [
+                "map_hit_add_blend",
+                [
+                    96,
+                    144,
+                    232
+                ]
+            ],
+            [
+                "min_range",
+                1
+            ],
+            [
+                "max_range",
+                3
+            ],
+            [
+                "map_cast_anim",
+                "MapMediumHealTrans"
+            ],
+            [
+                "battle_cast_anim",
+                "Physic"
+            ],
+            [
+                "battle_animation_music",
+                "Healing"
+            ],
+            [
+                "prf_class",
+                [
+                    "Cleric",
+                    "Bishop",
+                    "Cleric",
+                    "Bishop",
+                    "Sage",
+                    "Druid",
+                    "Summoner",
+                    "Lord",
+                    "Veteran"
+                ]
+            ],
+            [
+                "equation_heal",
+                "HEAL"
+            ],
+            [
+                "map_cast_pose",
+                null
+            ]
+        ]
+    }
+]

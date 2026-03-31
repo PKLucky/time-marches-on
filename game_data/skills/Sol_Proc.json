@@ -1,0 +1,18 @@
+[
+    {
+        "nid": "Sol_Proc",
+        "name": "Sol",
+        "desc": "Proc: Skl/2%\nRestores HP equal to half the damage dealt.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            7,
+            32
+        ],
+        "components": [
+            [
+                "lifelink",
+                0.5
+            ]
+        ]
+    }
+]

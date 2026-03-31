@@ -1,0 +1,21 @@
+[
+    {
+        "name": "Anna Choose Stock",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "# Rule of Thumb: Vanilla/Vanilla-like Stat Boosters get 3 weight, Promo Items/Growth Items get 5 weight, all other rare items get 1 weight",
+            "lvar;AnnaGetItem;game.get_random_choice({v:AnnaItemPool})",
+            "if;v('AnnaGetItem') in v('AnnaStock')",
+            "  trigger_script;0 Anna Choose Stock",
+            "else",
+            "  mlvar;AnnaStock;it.append('{v:AnnaGetItem}')",
+            "end"
+        ],
+        "nid": "0 Anna Choose Stock"
+    }
+]

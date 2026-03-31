@@ -1,0 +1,20 @@
+[
+    {
+        "name": "Vendor Choose Stock",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "lvar;VendorGetItem;game.get_random_choice(['Angelic_Robe','Energy_Ring','Secret_Book','Speedwing','Goddess_Icon','Dragonshield','Talisman','Rainbow_Tonic','Swiftsole','Body_Ring','Hero_Crest','Knight_Crest','Orion_Bolt','Guiding_Ring','Elysian_Whip','Ocean_Seal','Metis_s_Tome','Mystic_Ring','Thunder_Charm','Fire_Charm','Wind_Charm','Ice_Charm'])",
+            "if;v('VendorGetItem') in v('VendorStock')",
+            "  trigger_script;0 Vendor Choose Stock",
+            "else",
+            "  mlvar;VendorStock;it.append('{v:VendorGetItem}')",
+            "end"
+        ],
+        "nid": "0 Vendor Choose Stock"
+    }
+]

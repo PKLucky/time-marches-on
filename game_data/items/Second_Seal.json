@@ -1,0 +1,57 @@
+[
+    {
+        "nid": "Second_Seal",
+        "name": "Second Seal",
+        "desc": "Reclass into any class of the same tier for the month. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "icon_nid": "Boosters",
+        "icon_index": [
+            0,
+            14
+        ],
+        "components": [
+            [
+                "usable",
+                null
+            ],
+            [
+                "target_ally",
+                null
+            ],
+            [
+                "uses",
+                1
+            ],
+            [
+                "uses_options",
+                {
+                    "lose_uses_on_miss": false,
+                    "one_loss_per_combat": false
+                }
+            ],
+            [
+                "usable_in_base",
+                null
+            ],
+            [
+                "value",
+                8000
+            ],
+            [
+                "no_map_hp_display",
+                null
+            ],
+            [
+                "map_cast_pose",
+                null
+            ],
+            [
+                "event_after_combat_on_hit",
+                "Global Second Seal"
+            ],
+            [
+                "unsplashable",
+                null
+            ]
+        ]
+    }
+]

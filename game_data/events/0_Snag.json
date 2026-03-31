@@ -1,0 +1,17 @@
+[
+    {
+        "name": "Snag",
+        "trigger": "unit_death",
+        "level_nid": "0",
+        "condition": "unit.nid == 'snag'",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "sound;Wall Attack",
+            "map_anim;Snag;{position}",
+            "show_layer;snag"
+        ],
+        "nid": "0 Snag"
+    }
+]

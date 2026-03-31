@@ -1,0 +1,33 @@
+[
+    {
+        "name": "Class Siblings Jagen Choice",
+        "trigger": null,
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 20,
+        "_source": [
+            "if;[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'ClassSkill'][0]",
+            "  textbox;ClassInfoTable;<yellow>Weapons:</> {e:', '.join(w for w in DB.classes.get('{v:SiblingKlass}').wexp_gain if DB.classes.get('{v:SiblingKlass}').wexp_gain[w].usable == True)}{br}<yellow>Growth Rate Changes:</>{br}<green>{e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'Strengths'][0]}</>, <red>{e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'Weaknesses'][0]}</>{br}<yellow>Class Skills:</> {e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'ClassSkill'][0]};bottom_left;150;5;;0.25",
+            "else",
+            "  textbox;ClassInfoTable;<yellow>Weapons:</> {e:', '.join(w for w in DB.classes.get('{v:SiblingKlass}').wexp_gain if DB.classes.get('{v:SiblingKlass}').wexp_gain[w].usable == True)}{br}<yellow>Growth Rate Changes:</>{br}<green>{e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'Strengths'][0]}</>, <red>{e:[field[1] for field in DB.classes.get('{v:SiblingKlass}').fields if field[0] == 'Weaknesses'][0]}</>{br}<yellow>Class Skills:</> None;bottom_left;150;5;;0.25",
+            "end",
+            "choice;JagenKlassChange;Change {v:JagenName}'s class to {e:DB.classes.get(v('SiblingKlass')).name}?;Yes,No;;horizontal;top;backable",
+            "if;v('JagenKlassChange') == 'Yes'",
+            "  if;v('SiblingKlass') in v('JagenClassFinal')",
+            "    change_class;Player;{v:SiblingKlass};silent",
+            "    sound;Item",
+            "    alert;Changed class to {e:DB.classes.get('{v:SiblingKlass}').name}!",
+            "  else",
+            "    change_class;Player;{v:SiblingKlass}",
+            "  end",
+            "  lvar;ChoiceMade;True",
+            "  if;v('SiblingKlass') not in v('JagenClassFinal')",
+            "    mlvar;JagenClassFinal;it.append(v('SiblingKlass'))",
+            "  end",
+            "end"
+        ],
+        "nid": "0 Class Siblings Jagen Choice"
+    }
+]

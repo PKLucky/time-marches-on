@@ -1,0 +1,19 @@
+[
+    {
+        "name": "Castle Toggle Revert Class Option",
+        "trigger": "Castle",
+        "level_nid": "0",
+        "condition": "True",
+        "commands": [],
+        "only_once": false,
+        "priority": 21,
+        "_source": [
+            "if;'Revert Class' in v('CastleChoiceList') and u('Lord').klass == 'Lord' and u('Player').klass == 'Veteran'",
+            "  mlvar;CastleChoiceList;it.remove('Revert Class')",
+            "elif;(u('Lord').klass != 'Lord' or u('Player').klass != 'Veteran') and 'Revert Class' not in v('CastleChoiceList')",
+            "  mlvar;CastleChoiceList;it.insert(-1,'Revert Class')",
+            "end"
+        ],
+        "nid": "0 Castle Toggle Revert Class Option"
+    }
+]

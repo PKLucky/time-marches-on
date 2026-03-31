@@ -1,0 +1,27 @@
+[
+    {
+        "nid": "Magic_Plus5",
+        "name": "Magic +5",
+        "desc": "Grants MAG +5.",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            4,
+            2
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "MAG",
+                        5
+                    ]
+                ]
+            ],
+            [
+                "class_skill",
+                null
+            ]
+        ]
+    }
+]

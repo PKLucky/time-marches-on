@@ -1,0 +1,31 @@
+[
+    {
+        "nid": "Lucktaker_Effect",
+        "name": "Lucktaker",
+        "desc": "Grants +2 Luck (Max +6).",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            4,
+            26
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "LCK",
+                        2
+                    ]
+                ]
+            ],
+            [
+                "stack",
+                3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
+            ]
+        ]
+    }
+]

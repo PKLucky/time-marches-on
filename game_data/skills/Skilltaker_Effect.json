@@ -1,0 +1,31 @@
+[
+    {
+        "nid": "Skilltaker_Effect",
+        "name": "Skilltaker",
+        "desc": "Grants +2 Skill (Max +6).",
+        "icon_nid": "Skills_1",
+        "icon_index": [
+            2,
+            26
+        ],
+        "components": [
+            [
+                "stat_change",
+                [
+                    [
+                        "SKL",
+                        2
+                    ]
+                ]
+            ],
+            [
+                "stack",
+                3
+            ],
+            [
+                "lost_on_end_chapter",
+                null
+            ]
+        ]
+    }
+]
