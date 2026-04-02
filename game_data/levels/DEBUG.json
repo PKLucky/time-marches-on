@@ -80,10 +80,21 @@
                 "nid": "102",
                 "variant": null,
                 "level": 1,
-                "klass": "Monk",
+                "klass": "Troubadour",
                 "faction": "Soldier",
-                "starting_items": [],
-                "starting_skills": [],
+                "starting_items": [
+                    [
+                        "Heal",
+                        false
+                    ],
+                    [
+                        "Mend",
+                        false
+                    ]
+                ],
+                "starting_skills": [
+                    "Canto"
+                ],
                 "team": "player",
                 "ai": "None",
                 "roam_ai": null,

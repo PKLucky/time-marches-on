@@ -72,30 +72,6 @@
         "info_offset": 0
     },
     {
-        "nid": "Woman1",
-        "blinking_offset": [
-            24,
-            32
-        ],
-        "smiling_offset": [
-            16,
-            48
-        ],
-        "info_offset": 0
-    },
-    {
-        "nid": "Woman2",
-        "blinking_offset": [
-            24,
-            32
-        ],
-        "smiling_offset": [
-            16,
-            48
-        ],
-        "info_offset": 0
-    },
-    {
         "nid": "OldMan1",
         "blinking_offset": [
             24,
@@ -120,19 +96,19 @@
         "info_offset": 0
     },
     {
-        "nid": "SoldierRed",
+        "nid": "Anna",
         "blinking_offset": [
             24,
-            24
+            32
         ],
         "smiling_offset": [
             16,
-            40
+            48
         ],
         "info_offset": 0
     },
     {
-        "nid": "Anna",
+        "nid": "OldWoman1",
         "blinking_offset": [
             24,
             32

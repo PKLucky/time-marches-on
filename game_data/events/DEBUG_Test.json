@@ -23,7 +23,7 @@
             "#wait;5000",
             "#music;Attack;2000",
             "#wait;5000",
-            "change_class;Lord;Myrmidon;silent"
+            "s;;{e:u('102').items[1].nid}"
         ],
         "nid": "DEBUG Test"
     }

@@ -63,6 +63,13 @@
         "text": "The armory sells <red>Skill Scrolls</> that teach different skills to a unit. They sell five scrolls per month and restock with different scrolls every month.\nSkill Scrolls are used immediately by the person who bought them."
     },
     {
+        "nid": "Fortune",
+        "name": "Fortunes",
+        "title": "Fortune House",
+        "category": "Shops",
+        "text": "Once per month for 500G, the fortune teller can tell you about an enemy that will appear during the battle at the end of the year.{br}She will tell you about a random enemy's <red>class</>, <red>weapon</>, and <red>Skill</>.\nThis information can reviewed at the castle by choosing <red>Check Current Standings</>."
+    },
+    {
         "nid": "Vendor",
         "name": "Vendor",
         "title": "Vendor",
