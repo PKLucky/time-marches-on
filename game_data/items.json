@@ -12039,7 +12039,7 @@
     {
         "nid": "ScrollHP_Plus10",
         "name": "HP +10 Scroll",
-        "desc": "Grants HP +10. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
+        "desc": "Grants Max HP +10. <red>({e:self.value.value // 2 if has_skill('Lord','Bargain') else self.value.value}G)</>",
         "icon_nid": "Skills_1",
         "icon_index": [
             6,

@@ -414,7 +414,7 @@
     {
         "nid": "HP_Plus10",
         "name": "HP +10",
-        "desc": "Grants Max HP +5.",
+        "desc": "Grants Max HP +10.",
         "icon_nid": "Skills_1",
         "icon_index": [
             6,
