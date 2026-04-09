@@ -32,7 +32,7 @@
         "name": "Reclassing",
         "title": "Re-Classy Siblings",
         "category": "Mechanics",
-        "text": "Six of the Re-Classy Siblings appear on the map every month. Three of them can change {v:LordName}'s class and the other three can change {v:JagenName}'s class.\nAny class chosen will be part of that unit's re-classing options at the end of the year."
+        "text": "Six of the Re-Classy Siblings appear on the map every month. Three of them can change {v:LordName}'s class and the other three can change {v:JagenName}'s class.\nAny class chosen will be part of that unit's re-classing options at the end of the year <red>even if it is not the last class they change into by the end of the month</>."
     },
     {
         "nid": "Skills",

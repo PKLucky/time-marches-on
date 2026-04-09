@@ -958,12 +958,12 @@
                 "faction": "Soldier",
                 "starting_items": [
                     [
-                        "Heavy_Spear",
+                        "Iron_Lance",
                         false
                     ]
                 ],
                 "starting_skills": [
-                    "Astra"
+                    "Critical_Proc"
                 ],
                 "team": "player",
                 "ai": "None",
@@ -1032,6 +1032,29 @@
                     5,
                     8
                 ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "Player",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": [
+                    6,
+                    8
+                ],
+                "starting_traveler": null,
+                "generic": false
+            },
+            {
+                "nid": "BrigandBoss",
+                "team": "player",
+                "ai": "None",
+                "roam_ai": null,
+                "ai_group": "",
+                "starting_position": null,
                 "starting_traveler": null,
                 "generic": false
             }
@@ -1115,11 +1138,6 @@
             }
         ],
         "unit_groups": [],
-        "ai_groups": [
-            {
-                "nid": "",
-                "trigger_threshold": 1
-            }
-        ]
+        "ai_groups": []
     }
 ]

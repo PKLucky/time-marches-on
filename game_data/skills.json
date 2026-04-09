@@ -1636,26 +1636,6 @@
         ]
     },
     {
-        "nid": "Slayer",
-        "name": "Slayer",
-        "desc": "All attacks are effective against monsters.",
-        "icon_nid": "Skills",
-        "icon_index": [
-            2,
-            9
-        ],
-        "components": [
-            [
-                "class_skill",
-                null
-            ],
-            [
-                "item_override",
-                "Iron_Sword"
-            ]
-        ]
-    },
-    {
         "nid": "Refresh",
         "name": "Refresh",
         "desc": "Allows a unit to act again.",
